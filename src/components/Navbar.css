@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Maven+Pro:wght@800&display=swap');
+
+.navbar{
+    width: 100%;
+    background-color: var(--c1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 12px 65px;
+}
+
+.navbar h1{
+    color: var(--c3);
+    font: bold 26px 'Maven Pro', sans-serif;
+}
+
+.nav-links ul{ 
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.nav-links ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: var(--c3);
+    font-size: 16px;
+    font-family: 'Maven pro', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.nav-links ul li a:hover{
+    color: var(--c2);
+}
+
+.nav-links ul li button{
+    color: var(--c1);
+    font-size: 15px;
+    font-family: 'Maven pro', sans-serif;
+    background-color: var(--c3);
+    padding: 8px 15px;
+    border: none;
+    /* border: 1px solid var(--c3); */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-links ul li button:hover{
+    background-color: var(--c2);
+}
