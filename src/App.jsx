@@ -4,11 +4,10 @@ import Navbar from './components/Navbar';
 import data from './data';
 import profile from './assets/sideview.png';
 import { FaPhoneAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaDownload } from "react-icons/fa6";
+import { MdEmail, MdDeleteSweep } from "react-icons/md";
+import { FaLocationDot, FaDownload } from "react-icons/fa6";
 import { BsSendFill } from "react-icons/bs";
-
+import { RiMailSendFill } from "react-icons/ri";
 
 
 
@@ -179,8 +178,8 @@ function App() {
                         <textarea id="message" name="message" placeholder='Message' rows="4" value={formData.message} onChange={handleChange} required></textarea>
 
                         <div className='contact-form-btn'>
-                            <button type="reset" className='form-reset'>Reset</button>
-                            <button type="submit" className='form-submit'>Send <BsSendFill /></button>
+                            <button type="reset" className='form-reset'><MdDeleteSweep /> Reset</button>
+                            <button type="submit" className='form-submit'><RiMailSendFill /> Send</button>
                         </div>         
                     </form>
                 </div>

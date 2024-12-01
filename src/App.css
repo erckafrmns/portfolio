@@ -478,11 +478,16 @@ h3 span {
   width: 48%;
   padding: 16px;
   cursor: pointer;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 5px;
   font-size: 14px;
   color: var(--c5);
   font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -496,7 +501,6 @@ h3 span {
 
 .contact-form button:hover{
   background-color: transparent;
-  transform: scale(0.98);
 }
 
 .form-submit:hover{
