@@ -6,6 +6,9 @@ import profile from './assets/sideview.png';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import { FaDownload } from "react-icons/fa6";
+import { BsSendFill } from "react-icons/bs";
+
 
 
 
@@ -144,12 +147,11 @@ function App() {
             </section>
 
             <section className='contact-me'>                
-                <div className='contactUs-bot'>
-                    <h1>Contact Us</h1>
-                    <p>Have any questions or need assistance?</p>
-                    
-                    <div className='contactUs-container'>
-                        <div className='contacts'>
+                <h1>Contact Me</h1>
+                <p>Looking to collaborate or have an opportunity to discuss?<br></br>Feel free to reach out! </p>
+                
+                <div className='contact-container'>
+                    <div className='contacts'>
                         <div className='contact-items'>
                             <FaPhoneAlt  className='contact-icons'/>
                             <p>{contacts.phone}</p>
@@ -162,26 +164,25 @@ function App() {
                             <FaLocationDot className='contact-icons'/>
                             <p>{contacts.location}</p>
                         </div>
+                        <div className='contact-items dl-resume'>
+                            <button><FaDownload className='contact-icons'/>  Download Resume</button>
                         </div>
-
-                        <div className="vertical-line"></div>
-
-                        <form className='contactForm' onSubmit={handleSubmit}>
-                            <div>
-                                <input type="text" id="fullname" name="fullname" placeholder="Name" value={formData.fullname} onChange={handleChange} required/>
-                            </div>
-
-                            <div>
-                                <input type="email" id="email" name="email" placeholder='Email' value={formData.email} onChange={handleChange} required/>
-                            </div>
-
-                            <div>
-                                <textarea id="message" name="message" placeholder='Message' rows="5" value={formData.message} onChange={handleChange} required></textarea>
-                            </div>
-
-                            <button type="submit">Send</button>
-                        </form>
                     </div>
+
+                    <div className="vertical-line2"></div>
+
+                    <form className='contact-form' onSubmit={handleSubmit}>
+                        <input type="text" id="fullname" name="fullname" placeholder="Name" value={formData.fullname} onChange={handleChange} required/>
+                
+                        <input type="email" id="email" name="email" placeholder='Email' value={formData.email} onChange={handleChange} required/>
+                 
+                        <textarea id="message" name="message" placeholder='Message' rows="4" value={formData.message} onChange={handleChange} required></textarea>
+
+                        <div className='contact-form-btn'>
+                            <button type="reset" className='form-reset'>Reset</button>
+                            <button type="submit" className='form-submit'>Send <BsSendFill /></button>
+                        </div>         
+                    </form>
                 </div>
             </section>
 
