@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Maven+Pro:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&display=swap');
 
 :root{
-  --c1:#023330;
-  --c2: #4da674;
-  --c3: #e2f6dd;
-  --c4: #eaf8e7;
+  --c1:#000000;
+  --c2: #023330;
+  --c3: #4da674;
+  --c4: #618897;
+  --c5: #eaf8e7;
+  --c6: #e2f6dd;
 }
 
 * {
@@ -14,29 +16,450 @@
 }
 
 body{
-  background-color: var(--c3);
   width: 100%;
+  height: 100%;
   overflow-x: hidden;
+  /* background: linear-gradient(90deg, var(--c6), #73958b); */
+  background: linear-gradient(90deg, #113736, #04080b);
 }
 
+h1, h2, h3, h4, p{
+  cursor: default;
+}
+
+
+/* HERO SECTION STYLES */
 .hero{
   width: 100%;
-  margin: 5% 0% 0% 8%;  
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content{
+  padding: 5% 0 5% 0;  
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .hero-left{
+  width: 8%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--c1);
+  border-radius: 0 10rem 10rem 0 / 0 100% 100% 0;
+  opacity: 68%;
+}
+
+.hero .hero-middle{
   width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-left: 2%;
+  gap: 2%;
+}
+
+.hero-middle h1, .hero-middle h3{
+  font-family: 'Maven Pro', sans-serif;
+  color: var(--c5);
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.hero-middle h3{
+  font-size: 40px;
+  padding-bottom: 3%;
+  position: relative;
+}
+
+.hero-middle span{
+  color: var(--c3);
+  /* text-shadow: 1px 2px 10px var(--c1); */
+
+}
+
+#roles {
+  display: inline-block;
+  padding-right: 5px;
+  animation: blink 2s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+h3 span {
+  display: inline-block;
+  position: relative;
+}
+
+.cursor {
+  position: absolute;
+  right: -5px;
+  width: 3px;
+  height: 100%;
+  background-color: var(--c3);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+.hero-middle p{
+  width: 85%;
+  font-family: 'Manrope', sans-serif;
+  color: var(--c5);
+  font-size: 18px;
+  padding-bottom: 4%;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.hero-buttons{
+  height: 12%;
+}
+
+.hero-buttons button{
+  height: 100%;
+  width: 30%;
+  cursor: pointer;
+  border-radius: 15px;
+  font: 18px 'Maven Pro', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+
+.LinkedInBTN{
+  background-color: var(--c1);
+  margin-right: 6%;
+  border: none;
+  color: var(--c5);
+}
+
+.GitHubBTN{
+  background-color: var(--c3);
+  border: none;
+  /* border: 2px solid var(--c1); */
+  color: var(--c1);
+}
+
+.LinkedInBTN:hover{
+  background-color: var(--c3);
+  border: 2px solid var(--c1);
+  color: var(--c1);
+  transform: scale(0.98);
+}
+
+.GitHubBTN:hover{
+  background-color: var(--c3);
+  border: 2px solid var(--c2);
+  color: var(--c2);
+  transform: scale(0.98);
 }
 
 .hero-right{
-  width: 45%;
+  width: 40%;
+  height: 100%;
   display: flex;
   align-items: center;
+  background-color: #023330;
+  border-radius: 15rem 0 0 15rem/ 100% 0 0 100%;
 }
 
 .hero-right h1{
   background-color: var(--c1);
+}
+
+/* SKILLS SECTION STYLES */
+.skills{
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 5% 5%;
+}
+
+.skills-left{
+  width: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skills-left h1{
+  writing-mode: vertical-lr;
+  text-orientation:upright;
+  color: var(--c5);
+  font: 800 40px 'Maven Pro', sans-serif;
+  letter-spacing: 30px;
+}
+
+
+.vertical-line {
+  width: 2px;
+  height: 100%; 
+  background-color: var(--c5);
+}
+
+.skills-right{
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skills-right h1{
+  color: var(--c5);
+  padding-bottom: 10%;
+}
+
+.languages, .frameworks, .others{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.languages-list ul,
+.frameworks-list ul,
+.others-list ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    height: 100%;
+}
+
+.languages-list li,
+.frameworks-list li,
+.others-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 1rem;
+    height: 45%;
+    border: 2px solid var(--c5);
+    background-color: var(--c2);
+    cursor: pointer;
+}
+
+.languages-list img,
+.frameworks-list img,
+.others-list img {
+    width: 50%;
+    height: 50px;
+    object-fit: contain;
+}
+
+.languages-list span,
+.frameworks-list span,
+.others-list span {
+    color: var(--c5);
+}
+
+.languages-list li:nth-child(1),
+.languages-list li:nth-child(2),
+.frameworks-list li:nth-child(1),
+.frameworks-list li:nth-child(2),
+.others-list li:nth-child(1),
+.others-list li:nth-child(2) {
+    width: 40%;
+}
+
+.languages-list li:nth-child(3),
+.languages-list li:nth-child(4),
+.languages-list li:nth-child(5),
+.others-list li:nth-child(3),
+.others-list li:nth-child(4),
+.others-list li:nth-child(5){
+    width: 29%;
+}
+
+.frameworks-list li:nth-child(3),
+.others-list li:nth-child(6){
+  width: 60%;
+}
+
+.languages-list li:nth-child(6),
+.languages-list li:nth-child(7),
+.frameworks-list li:nth-child(4),
+.frameworks-list li:nth-child(5){
+    width: 40%;
+}
+
+.languages-list li:nth-child(6) img,
+.languages-list li:nth-child(7) img,
+.frameworks-list li:nth-child(3) img,
+.others-list li:nth-child(6) img{
+    width: 70%;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+/* PROJECTS SECTION STYLES */
+.projects{
+  min-height: 100vh;
+  height: auto;
+}
+
+
+
+
+
+
+/* CONTACT ME SECTION STYLES */
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--green);
+    padding: 40px 50px;
+    width: 100%;
+}
+
+
+.contactUs-bot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 100%;
+}
+
+.contactUs h1{
+  color: var(--beige);
+  font-family: "EfcoBrookshire", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.contactUs p{
+  color: var(--beige);
+  font-family: "Lora", sans-serif;
+  font-size: 16px;
+}
+
+.contactUs-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 50px;
+  width: 100%;
+  height: 80%;
+}
+
+.vertical-line{
+  width: 1px; 
+  height: 90%; 
+  background-color: var(--beige); 
+  margin: 0 auto; 
+}
+
+.contacts{
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 80px;
+  padding-top: 10px;
+}
+
+.contact-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #202f1b;
+  margin: 10px;
+  padding: 20px;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.contact-items p{
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.contact-icons{
+  color: var(--beige);
+}
+
+.contactForm{
+  width: 49%;
+  padding-left: 80px;
+  padding-top: 10px;
+}
+
+.contactForm input, .contactForm textarea{
+  width: 80%;
+  border-radius: 5px;
+  padding: 15px 10px;
+  color: var(--beige);
+  background-color: #202f1b;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 14;
+}
+
+.contactForm textarea{
+  resize: none;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder{
+  color: #8e8e8e;
+  letter-spacing: 0;
+}
+
+.contactForm button{
+  margin: 10px;
+  border-radius: 5px;
+  width: 18%;
+  padding: 10px 0;
+  background-color: var(--beige);
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--green);
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactForm button:hover{
+  background-color: var(--green);
+  border: 1px solid var(--beige);
+  color: var(--beige);
+  transform: scale(0.96);
 }
