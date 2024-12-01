@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&display=swap');
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--c1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 100px;
+}
+
+.footer h1{
+    font: 600 25px 'Maven Pro', sans-serif;
+    color: var(--c5);
+}
+
+.footer p{
+    width: 40%;
+    color: var(--c5);
+    font: 500 14px 'Manrope', sans-serif;
+    padding: 5px 0 20px 0;
+    text-align: center;
+}
+
+.footer-socials ul{
+    color: var(--c5);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.footer-socials ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.footer-socials ul li img{
+    width: 32px;
+    height: 32px;
+    transition: all 0.3s ease;
+}
+
+.footer-socials ul li img:hover{
+    transform: scale(0.95);
+}
+
+.footer h4{
+    color: var(--c5);
+    font: 400 12px 'Manrope', sans-serif;
+    padding-top: 20px;
+}

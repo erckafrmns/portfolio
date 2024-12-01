@@ -16,6 +16,11 @@ import nodejs from './assets/others/Nodejs.png';
 import xampp from './assets/others/XAMPP.png';
 import mysql from './assets/others/MySQL.png';
 import postgres from './assets/others/PostgreSQL.png';
+import facebook from './assets/socials/facebook.png';
+import gmail from './assets/socials/gmail.png';
+import linkedin from './assets/socials/linkedin.png';
+import github from './assets/socials/github.png';
+
 
 const data = {
     firstname: "Ericka",
@@ -32,9 +37,14 @@ const data = {
       email: "formaneserickajoy@gmail.com",
       phone: "+639153095156",
       location: "Metro Manila, NCR, Philippines",
-      linkedin: "https://linkedin.com/in/your-profile",
-      github: "https://github.com/erckafrmns",
     },
+
+    socials: [
+      {name: "Facebook", img: facebook, link: "https://www.facebook.com/EriiSsi"},
+      {name: "Gmail", img: gmail,},
+      {name: "LinkedIn", img: linkedin, link: "https://www.linkedin.com/in/erickaformanes"},
+      {name: "GitHub", img: github, link: "https://github.com/erckafrmns"},
+    ],
     
     skills: {
       languages: [

@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect, useRef } from 'react';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import data from './data';
 import profile from './assets/sideview.png';
 import { FaPhoneAlt } from "react-icons/fa";
@@ -184,7 +185,7 @@ function App() {
                     </form>
                 </div>
             </section>
-
+            <Footer/>                          
         </>
     );
 }
