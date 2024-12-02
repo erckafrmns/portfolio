@@ -23,11 +23,11 @@ import github from './assets/socials/github.png';
 
 
 const data = {
-    firstname: "Ericka",
+    firstname: "Ericka Joy",
     
     lastname: "Formanes",
     
-    roles: ["Software Developer.", "Web Developer.", "UI/UX Designer.", "Full-stack Developer."],
+    roles: ["Software Developer.", "Web Developer.", "Full-stack Developer."],
     
     intro: "I have an extensive experience in creating secure and responsive web applications and programs. I also find joy in developing mobile apps and exploring various facets of software engineering.",
     

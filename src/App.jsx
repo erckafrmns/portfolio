@@ -65,10 +65,10 @@ function App() {
     
     return (
         <>
-            
+            <Navbar/>
             {/* HERO/HOME SECTION */}
             <section className='hero'>
-                <Navbar/>
+                
                 <div className='hero-content'>
                     <div className='hero-left'>.</div>
                     <div className='hero-middle'>
