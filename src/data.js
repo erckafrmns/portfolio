@@ -20,6 +20,10 @@ import facebook from './assets/socials/facebook.png';
 import gmail from './assets/socials/gmail.png';
 import linkedin from './assets/socials/linkedin.png';
 import github from './assets/socials/github.png';
+import { FaReact, FaPython, FaDocker, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa6";
+import { BiLogoFlask, BiLogoPostgresql, BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
+import { SiExpress } from "react-icons/si";
+import { DiDjango } from "react-icons/di";
 
 
 const data = {
@@ -72,6 +76,49 @@ const data = {
         { name: "MySQL", img: mysql },
       ],
     },
+
+    projects: [
+      {
+        name: "Ang Tipo Kong Kwento", 
+        img: facebook, 
+        description: "This is a web-based application that generates child-friendly Tagalog stories with the use of Artificial Intelligence.", 
+        link: "https://www.facebook.com/EriiSsi",
+        languages: [
+          <FaReact/>, <FaPython/>, <BiLogoFlask/>, <BiLogoPostgresql/>, <FaDocker/>
+        ]
+      },
+
+      {
+        name: "CampusCompass", 
+        img: facebook, 
+        description: "CampusCompass is an innovative campus map for Technological University of the Philippines - Manila. Its features include GPS-enabled direction routing, optimized algorithms for the shortest route, and location history tracking.", 
+        link: "https://www.facebook.com/EriiSsi",
+        languages: [
+          <BiLogoTypescript/>, <FaHtml5/>, <FaCss3Alt/>, <FaNodeJs/>
+        ]
+      },
+
+      {
+        name: "Markdown to HTML Converter", 
+        img: facebook, 
+        description: "Markdown to HTML Converter is a web-based application that lets you convert Markdown to HTML seamlessly.", 
+        link: "https://www.facebook.com/EriiSsi",
+        languages: [
+          <FaHtml5/>, <FaCss3Alt/>, <BiLogoJavascript/>, <FaNodeJs/>, <SiExpress/>
+        ]
+      },
+
+      {
+        name: "Properties Settlement", 
+        img: facebook, 
+        description: "This is a web app that enable users to settle their inheritance or property using the sealed bid method.", 
+        link: "https://www.facebook.com/EriiSsi",
+        languages: [
+          <FaHtml5/>, <FaCss3Alt/>, <BiLogoJavascript/>, <FaPython/>, <DiDjango/>
+        ]
+      },
+    ],
+    
   };
   
   export default data;

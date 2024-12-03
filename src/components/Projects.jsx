@@ -4,6 +4,9 @@ import './Projects.css';
 
 
 const Projects = () => {
+
+    const { projects } = data; 
+
     return (
         <>
             <section className='projects' id='projects'>
@@ -22,6 +25,18 @@ const Projects = () => {
                     
                 </div>
                 <div className="project-bot">
+
+                    <ul>
+                        {projects.map((project, index) => (
+                            <li key={index}>
+                                <h2>{project.name}</h2>
+                                <p>{project.description}</p>
+                                <div className='projects-languages'>
+                                    {project.languages}
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
 
                 </div>
             </section>
