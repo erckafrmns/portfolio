@@ -4,7 +4,7 @@ import data from '../data';
 
 const Footer = () => {
 
-    const { firstname, lastname, roles, intro, school, contacts, socials, skills } = data; 
+    const { firstname, lastname, socials } = data; 
 
     return (
         <>

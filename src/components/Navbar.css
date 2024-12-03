@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 60px 12px 5%;
+    padding: 20px 5% 12px 5%;
     position: fixed;
     z-index: 1000;
 }
@@ -35,36 +35,103 @@
     margin: 0 20px;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
     text-decoration: none;
     color: var(--c4);
     font-size: 16px;
-    font-family: 'Maven pro', sans-serif;
-    transition: all 0.3s ease;
+    font-family: 'Maven Pro', sans-serif;
     font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease; 
 }
 
-.nav-links ul li a:hover{
+.nav-links ul li a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 2px; 
+    background-color: var(--c3); 
+    transition: all 0.3s ease; 
+    transform: translateX(-50%); 
+}
+
+.nav-links ul li a:hover::before,
+.nav-links ul li a.active::before {
+    width: 100%; 
+    left: 50%; 
     color: var(--c3);
 }
 
-.nav-links ul li button{
+.nav-links ul li a:hover, .nav-links ul li a.active{
     color: var(--c3);
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Maven pro', sans-serif;
-    background-color: var(--c1);
-    padding: 8px 15px;
-    width: 125px;
-    border: none;
-    border: 2px solid var(--c3);
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.nav-links ul li button:hover{
-    background-color: var(--yellow);
-    color: var(--c1);
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 7px 15px;
+    width: 115px;
+    text-align: center;
     border: 2px solid var(--yellow);
-}
+    text-decoration: none;
+    color: var(--c1);
+    white-space: nowrap;
+    z-index: 0;
+    border-radius: 5px;
+    font: 600 15px 'Maven pro', sans-serif;
+} 
+
+.resumeBTN::before {
+    position: absolute;
+    content: "";
+    background: var(--yellow);
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px 0px auto auto;
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+    border: 2px solid var(--yellow);
+} 
+
+.resumeBTN:hover::before {
+    width: 0px;
+    height: 100%;
+    opacity: 1;
+} 
+
+
+.resumeBTN {
+    background: var(--yellow);
+    color: var(--c1);
+    transition: 0.3s;
+} 
+
+
+.resumeBTN:hover {
+    background: transparent;
+    color: var(--yellow);
+    transition: 0.3s;
+} 
+
+
+.resumeBTN::after {
+    position: absolute;
+    content: "";
+    background: var(--yellow);
+    transition-duration: 0.3s;
+    z-index: -1;
+    inset: 0px auto auto 0px;
+    width: 50%;
+    height: 100%;
+    opacity: 1;
+    border: 2px solid var(--yellow);
+} 
+
+.resumeBTN:hover::after {
+    width: 0px;
+} 

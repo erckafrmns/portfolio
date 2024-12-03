@@ -1,0 +1,209 @@
+/* HERO SECTION STYLES */
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4.2%;
+}
+
+.hero-content{
+  padding: 5% 0 5% 0;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+}
+
+.hero-left{
+  width: 8%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--c1);
+  border-radius: 0 10rem 10rem 0 / 0 100% 100% 0;
+  opacity: 68%;
+}
+
+.hero-right{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  /* background-color: var(--c2); */
+  border: 2px solid var(--c2);
+  border-radius: 15rem 0 0 15rem/ 100% 0 0 100%;
+}
+
+
+.hero .hero-middle{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3%;
+  padding-left: 2%;
+  gap: 2%;
+}
+
+.hero-middle h1, .hero-middle h3{
+  font-family: 'Maven Pro', sans-serif;
+  color: var(--c4);
+  font-size: 55px;
+  font-weight: 900;
+}
+
+.hero-middle h3{
+  font-size: 40px;
+  padding-bottom: 3%;
+  position: relative;
+}
+
+.hero-middle h1 span{
+  color: var(--yellow);
+}
+
+h3 span {
+  display: inline-block;
+  position: relative;
+  color: var(--c3);
+}
+
+#roles {
+  display: inline-block;
+  padding-right: 5px;
+  animation: blink 2s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.cursor {
+  position: absolute;
+  right: -5px;
+  width: 3px;
+  height: 100%;
+  background-color: var(--c3);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+.hero-middle p{
+  width: 85%;
+  font-family: 'Manrope', sans-serif;
+  color: var(--c4);
+  font-size: 18px;
+  padding-bottom: 4%;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.hero-buttons{
+  height: 12%;
+}
+
+.hero-buttons button{
+  height: 100%;
+  width: 28%;
+  cursor: pointer;
+  font: 18px 'Maven Pro', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.GitHubBTN{
+  background-color: var(--c3);
+  color: var(--c1);
+}
+
+.GitHubBTN::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border: 2px solid var(--c3);
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+}
+
+.GitHubBTN:hover::before,
+.GitHubBTN:focus::before {
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+}
+
+.GitHubBTN:hover{
+  transform: scale(0.98);
+}
+
+.LinkedInBTN{
+  background-color: var(--yellow);
+  margin-right: 6%;
+  color: var(--c1);
+}
+
+.LinkedInBTN::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+}
+
+.LinkedInBTN:hover::before,
+.LinkedInBTN:focus::before {
+  top: calc(2px * -2);
+  left: calc(2px * -2);
+  right: calc(2px * -2);
+  bottom: calc(2px * -2);
+}
+
+.LinkedInBTN:hover{
+  transform: scale(0.98);
+}
+
+.custom-shape-divider-bottom-1733209978 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1733209978 svg {
+  position: relative;
+  display: block;
+  width: calc(169% + 1.3px);
+  height: 100px;
+}
+
+.custom-shape-divider-bottom-1733209978 .shape-fill {
+  fill: rgba(0, 0, 0, 0.7);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1733209978 svg {
+      width: calc(105% + 1.3px);
+      height: 153px;
+  }
+}

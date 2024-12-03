@@ -1,0 +1,187 @@
+/* CONTACT ME SECTION STYLES */
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    height: 100vh;
+    padding: 7% 10% 3.8% 10%;
+    width: 100%;
+    margin-bottom: 4%;
+}
+
+.contact-me h1{
+  color: var(--c4);
+  font-family: "Maven Pro", sans-serif;
+  font-size: 50px;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.contact-me h1:hover{
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.contact-me p{
+  color: var(--c4);
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2% 5% 0 5%;
+  width: 100%;
+  height: 80%;
+  margin-top: 1%;
+}
+
+.vertical-line2{
+  width: 1px; 
+  height: 100%; 
+  background-color: var(--c4); 
+  margin: 0 auto; 
+}
+
+.contacts{
+  width: 39%;
+  padding: 1% 4% 4% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.contact-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--c2);
+  padding: 18px 25px;
+  width: 85%;
+  border-radius: 5px;
+}
+
+.contact-items p{
+  padding-left: 10px;
+  font-size: 14px;
+  letter-spacing: .5px;
+}
+
+.dl-resume{
+  background-color: var(--c3);
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.dl-resume button{
+  width: 100%;
+  height: 100%;
+  padding: 18px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  border: none;
+  background-color: var(--c3);
+  color: var(--c1);
+  letter-spacing: 1px;
+}
+
+.dl-resume .contact-icons{
+  color: var(--c1);
+}
+
+.dl-resume:hover{
+  transform: scale(0.96);
+}
+
+.contact-icons{
+  color: var(--c4);
+}
+
+.contact-form{
+  width: 60%;
+  padding: 1% 0 0 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.contact-form input, .contact-form textarea{
+  width: 80%;
+  border-radius: 5px;
+  padding: 18px 25px;
+  color: var(--c4);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background-color: var(--c2);
+  font-family: 'Manrope', sans-serif;
+  letter-spacing: 1px;
+}
+
+.contact-form textarea{
+  resize: none;
+  line-height: 1.4;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+  color: var(--pholder);
+  opacity: 60%;
+  letter-spacing: .5px;
+}
+
+.contact-form-btn{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact-form button{
+  border-radius: 5px;
+  width: 48%;
+  padding: 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--c4);
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-submit{
+  background-color: var(--c3);
+}
+
+.form-reset{
+  background-color: var(--red);
+}
+
+.contact-form button:hover{
+  background-color: transparent;
+}
+
+.form-submit:hover{
+  border: 2px solid var(--c3);
+  color: var(--c3);
+}
+
+.form-reset:hover{
+  border: 2px solid var(--red);
+  color: var(--red);
+}
