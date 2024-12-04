@@ -7,30 +7,31 @@
   flex-direction: column;
   padding-top: 4.2%;
   position: relative;
+  padding-bottom: 30px;
 }
   
-.project-top-bg{
+.project-bg{
   width: 100%;
-  height: 410px;
+  height: 100%;
   top: 0;
   background-color: rgba(0,0,0,0.7);
   position: absolute;
   z-index: 1;
 }
 
-.project-top{
+.project-content{
   width: 100%;
   z-index: 2;
 }
 
-.project-top-content{
+.project-content{
   padding: 3% 5%;
   width: 100%;
 }
 
-.project-top-content h1{
+.project-content h1{
   font-family: "Maven Pro", sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   width: fit-content;
   color: var(--c4);
   margin: 0 0 30px 5%;
@@ -38,29 +39,161 @@
   text-align: left;
 }
 
-.project-top-content h1:hover{
+.project-content h1:hover{
   color: var(--yellow);
   cursor: pointer;
 }
 
-.featured-container{
-  height: 320px;
-  width: 55%;
-  justify-self: center;
+.project-content ul{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
 }
 
-.featured-container h2{
+.project-content ul li{
+  width: 72%;
+  height: 370px;
+  margin: 40px 0 50px 0;
+  /* position: block; */
+}
+
+.odd{
+  display: flex;
+  flex-direction: row;
+}
+
+.even{
+  display: flex;
+  flex-direction: row-reverse; 
+}
+
+.odd img, 
+.even img{
+  width: 60%;
+  z-index: 2;
+}
+
+.odd .pc-right,
+.even .pc-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: var(--c4);
-  font: 500 20px 'Maven Pro', sans-serif;
-  padding: 0 0 1% 1%;
+  z-index: 3;
 }
 
-.features{
-  width: 100%;
-  height: 100%;
+.even .pc-right {
+  align-items: flex-start;
+}
+
+.odd .pc-right {
+  align-items: flex-end;
+}
+
+
+.odd .pc-right h2,
+.even .pc-right h2{
+  font: 600 24px 'Maven Pro', sans-serif;
+  color: var(--c4);
+  margin-bottom: 25px; 
+}
+
+.odd .pc-descrip,
+.even .pc-descrip{
+  width: 120%;
+  height: 120px;
+  display: flex;
+  align-items: center;
   background-color: var(--c2);
-  border: 3px solid var(--c1);
-  border-radius: 10px;
+  border-radius: 5px;
+  padding: 0 20px 0 25px;
+
+}
+
+.odd .pc-right p, 
+.even .pc-right p{
+  line-height: 1.5;
+  font: 600 14px 'Manrope', sans-serif ;
+  color: var(--c6);
+}
+
+.even .pc-right p {
+  text-align: left; 
+}
+
+.odd .pc-right p {
+  text-align: end; 
+}
+
+.odd .project-languages,
+.even .project-languages{
+  width: 90%;
+  margin-top: 15px;
+  display: flex; 
+}
+
+.even .project-languages{
+  justify-content: flex-start;
+}
+
+.odd .project-languages{
+  justify-content: flex-end;
+}
+
+.odd .project-languages h3,
+.even .project-languages h3{
+  font-size: 22px;
+  padding: 0 10px 0 10px;
+  transition: all 0.3s ease;
+}
+
+.odd .icon-wrapper,
+.even .icon-wrapper{
+  position: relative;
+  display: inline-block;
+}
+
+.odd .tooltip,
+.even .tooltip {
+  visibility: hidden;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--c2);
+  color: var(--c4);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.odd .icon-wrapper:hover .tooltip,
+.even .icon-wrapper:hover .tooltip{
+  visibility: visible;
+  opacity: 1;
+}
+
+.odd .pc-right a,
+.even .pc-right a{
+  text-decoration: none;
+  margin-top: 15px;
+  color: var(--c6);
+  text-align: center;
+  font: 600 14px 'Manrope', sans-serif;
+}
+
+.odd .gitIcon,
+.even .gitIcon{
+  font: 600 12px 'Manrope', sans-serif;
+}
+
+.odd .pc-right a:hover,
+.even .pc-right a:hover{
+  text-decoration: underline;
+  text-decoration-color: var(--c2);
 }

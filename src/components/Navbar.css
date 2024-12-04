@@ -2,7 +2,7 @@
 
 .navbar{
     width: 100%;
-    background-color: var(--c1);
+    background-color: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,7 +10,12 @@
     padding: 20px 5% 12px 5%;
     position: fixed;
     z-index: 1000;
+    transition: all 0.5s ease-in;
 }
+
+.navbar.scrolled {
+    background-color: var(--c1);
+  }
 
 /* .navbar h1{
     color: var(--c3);
@@ -76,7 +81,7 @@
     padding: 7px 15px;
     width: 115px;
     text-align: center;
-    border: 2px solid var(--yellow);
+    border: 2px solid var(--c3);
     text-decoration: none;
     color: var(--c1);
     white-space: nowrap;
@@ -88,14 +93,14 @@
 .resumeBTN::before {
     position: absolute;
     content: "";
-    background: var(--yellow);
+    background: var(--c3);
     transition-duration: 0.3s;
     z-index: -1;
     inset: 0px 0px auto auto;
     width: 50%;
     height: 100%;
     opacity: 1;
-    border: 2px solid var(--yellow);
+    border: 2px solid var(--c3);
 } 
 
 .resumeBTN:hover::before {
@@ -106,7 +111,7 @@
 
 
 .resumeBTN {
-    background: var(--yellow);
+    background: var(--c3);
     color: var(--c1);
     transition: 0.3s;
 } 
@@ -114,7 +119,7 @@
 
 .resumeBTN:hover {
     background: transparent;
-    color: var(--yellow);
+    color: var(--c3);
     transition: 0.3s;
 } 
 
@@ -122,14 +127,14 @@
 .resumeBTN::after {
     position: absolute;
     content: "";
-    background: var(--yellow);
+    background: var(--c3);
     transition-duration: 0.3s;
     z-index: -1;
     inset: 0px auto auto 0px;
     width: 50%;
     height: 100%;
     opacity: 1;
-    border: 2px solid var(--yellow);
+    border: 2px solid var(--c3);
 } 
 
 .resumeBTN:hover::after {

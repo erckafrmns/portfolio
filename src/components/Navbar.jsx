@@ -9,23 +9,29 @@ const Navbar = () => {
 
   const [isHovered, setIsHovered] = useState(false);
   const [activeLink, setActiveLink] = useState('#hero');
+  const [isScrolled, setIsScrolled] = useState(false);
 
+
+
+  // SET ACTIVE NAV LINK BASED ON CLICK
   const handleNavClick = (id) => {
     setActiveLink(id);
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   };
 
+  // SET ACTIVE NAV LINK BASED ON SCROLL
   useEffect(() => {
     const sections = document.querySelectorAll('section');
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.6, 
+        threshold: 0.2, 
     };
 
     const observerCallback = (entries) => {
       entries.forEach((entry) => {
           if (entry.isIntersecting) {
+              console.log(`Visible: ${entry.target.id}`); // Debug log
               setActiveLink(`#${entry.target.id}`);
           }
       });
@@ -43,9 +49,27 @@ const Navbar = () => {
 
   }, []);
 
+
+  // FOR CHANGING COLOR OF NAVBAR
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-        <div className='navbar'>
+        <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <img src={navlogo} alt="" />
             <div className='nav-links'>
                 <ul>
