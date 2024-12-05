@@ -22,6 +22,11 @@
   font: 600 40px 'Maven Pro', sans-serif;
 }
 
+.skill-content h1:hover{
+  color: var(--yellow);
+  cursor: pointer;
+}
+
 .skill-content p{
   color: var(--c4);
   font: 400 14px 'Manrope', sans-serif;
@@ -79,7 +84,7 @@
     width: 50px;
     border-radius: 10px;
     box-shadow: rgba(48, 55, 55, 0.12) 0px 1px 3px, rgba(48, 55, 55, 0.24) 0px 1px 2px;
-    background-color: rgba(1, 23, 21, 0.9);
+    background-color: var(--blurBlack);
     cursor: pointer;
     position: relative; 
     overflow: hidden;
@@ -176,5 +181,5 @@
 }
 
 .skills .custom-shape-divider-skills-top .shape-fill {
-  fill: rgba(0,0,0,0.7);
+  fill: rgba(1, 23, 21, 0.9);
 }

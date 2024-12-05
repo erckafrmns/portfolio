@@ -24,6 +24,12 @@ import project1 from './assets/projects/1.png';
 import project2 from './assets/projects/2.png';
 import project3 from './assets/projects/3.png';
 import project4 from './assets/projects/4.png';
+import featured1 from './assets/projects/featured/15.png';
+import featured2 from './assets/projects/featured/16.png';
+import featured3 from './assets/projects/featured/17.png';
+import featured4 from './assets/projects/featured/16.png';
+import profile from './assets/Formanes.jpg';
+import resume from './assets/Resume.pdf';
 import { FaReact, FaPython, FaDocker, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa6";
 import { BiLogoFlask, BiLogoPostgresql, BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
@@ -34,6 +40,10 @@ const data = {
     firstname: "Ericka Joy",
     
     lastname: "Formanes",
+
+    profile: profile,
+
+    resume: resume,
     
     roles: ["Software Developer.", "Web Developer.", "Full-stack Developer."],
     
@@ -81,7 +91,7 @@ const data = {
       ],
     },
 
-    featuredProjects: [project1, project2, project3, project4],
+    featuredProjects: [featured1, featured2, featured3, featured4],
 
     projects: [
       {

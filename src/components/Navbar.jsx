@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css'; 
 import { FaDownload } from "react-icons/fa6";
 import navlogo from '../assets/navbar-logo.png';
-import resume from '../assets/Resume.pdf';
+import data from '../data';
 
 
 const Navbar = () => {
 
+  const { resume } = data; 
   const [isHovered, setIsHovered] = useState(false);
   const [activeLink, setActiveLink] = useState('#hero');
   const [isScrolled, setIsScrolled] = useState(false);
-
 
 
   // SET ACTIVE NAV LINK BASED ON CLICK
@@ -77,14 +77,14 @@ const Navbar = () => {
                     <li><a href="#projects"  className={activeLink === '#projects' ? 'active' : ''} onClick={() => handleNavClick('#projects')}>Projects</a></li>
                     <li><a href="#skills"  className={activeLink === '#skills' ? 'active' : ''} onClick={() => handleNavClick('#skills')}>Skills</a></li>
                     <li><a href="#contact-me"  className={activeLink === '#contact-me' ? 'active' : ''} onClick={() => handleNavClick('#contact-me')}>Contact Me</a></li>
-
+                    <a onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}  
+                      href={resume} download="Resume.pdf" className='hbtn resumeBTN'>
+                      {isHovered ? "Download" : "Resume"} <FaDownload />
+                    </a>
                 </ul>
                 
             </div>
-            <a onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}  
-              href={resume} download="Resume.pdf" className='hbtn resumeBTN'>
-              {isHovered ? "Download" : "Resume"} <FaDownload />
-            </a>
+            
         </div>
     </>
   )

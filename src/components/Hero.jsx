@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import profile from '../assets/sideview.png';
-import wave from '../assets/wave.svg';
 import data from '../data';
 import './Hero.css';
 

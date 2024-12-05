@@ -184,7 +184,7 @@ h3 span {
 }
 
 .custom-shape-divider-hero-bottom .shape-fill {
-  fill: rgba(0, 0, 0, 0.7);
+  fill: rgba(1, 23, 21, 0.9);
 }
 
 /** For tablet devices **/
@@ -257,7 +257,6 @@ h3 span {
   align-items: center;
   padding: 15px;
   perspective: 100px;
-  /* background-color: var(--c3); */
 }
 
 .slide img{
@@ -265,7 +264,7 @@ h3 span {
   cursor: pointer;
   transition: transform 1s;
   z-index: 2;
-}
+  box-shadow: rgba(9, 144, 105, 0.15) 1.95px 1.95px 2.6px;}
 
 .slide img:hover{
   transform: translateZ(10px);
@@ -278,7 +277,7 @@ h3 span {
   content: '';
   height: 100%;
   position: absolute;
-  width: 15%;
+  width: 8%;
   z-index: 2;
 }
 

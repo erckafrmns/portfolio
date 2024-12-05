@@ -4,13 +4,14 @@ import data from '../data';
 
 const Footer = () => {
 
-    const { firstname, lastname, socials } = data; 
+    const { firstname, lastname, socials, profile } = data; 
 
     return (
         <>
             <div className='footer'>
+                <img src={profile} alt="" className='profileIMG'/>
                 <h1>{firstname} {lastname}</h1>
-                <p>Should you be looking for someone who can bring valuable skills and experience, I would be excited to contribute to your team's success.</p>
+                <p>If you’re looking for someone who is passionate, eager to learn, and ready to contribute, I’d be thrilled to play a role in your team’s success.</p>
                 <div className='footer-socials'>
                     <ul>
                         <li>

@@ -17,7 +17,7 @@
     background-color: rgba(0,0,0,0.7);
     backdrop-filter: blur(15px); 
     -webkit-backdrop-filter: blur(15px);
-  }
+}
 
 /* .navbar h1{
     color: var(--c3);
@@ -90,6 +90,7 @@
     z-index: 0;
     border-radius: 5px;
     font: 600 15px 'Maven pro', sans-serif;
+    margin-left: 25px;
 } 
 
 .resumeBTN::before {
