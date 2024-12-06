@@ -50,7 +50,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* position: relative; */
 }
 
 .project-content ul li{
@@ -70,35 +69,82 @@
   flex-direction: row-reverse; 
 }
 
-.odd img, 
-.even img{
+.pc-image{
+  position: relative;
   width: 60%;
-  z-index: 2;
+  overflow: hidden;
 }
 
-.odd .pc-right,
-.even .pc-right {
+.pc-image img{
+  width: 100%;
+  height:100%;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.pc-image::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  cursor: pointer; 
+  background-color: rgba(2, 51, 48, 0.5)  ;
+  transition: transform 1s ease; 
+}
+
+.odd .pc-image::before{
+  right: 0;
+  transition-delay: 0.3s;
+  transform: translateX(0);
+}
+
+.even .pc-image::before{
+  left: 0;
+  transform: translateX(0);
+}
+
+.odd .pc-image:hover::before{
+  transform: translateX(-100%);
+}
+
+.even .pc-image:hover::before{
+  transform: translateX(100%);
+}
+
+.odd .pc-info,
+.even .pc-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: var(--c4);
   z-index: 3;
+  width: 40%;
 }
 
-.even .pc-right {
+.even .pc-info {
   align-items: flex-start;
 }
 
-.odd .pc-right {
+.odd .pc-info {
   align-items: flex-end;
 }
 
 
-.odd .pc-right h2,
-.even .pc-right h2{
+.odd .pc-info h2,
+.even .pc-info h2{
   font: 600 24px 'Maven Pro', sans-serif;
   color: var(--c4);
   margin-bottom: 25px; 
+  transition: all 0.3s ease-in-out;
+}
+
+.pc-info h2:hover{
+  color: var(--c3);
 }
 
 .odd .pc-descrip,
@@ -113,18 +159,18 @@
 
 }
 
-.odd .pc-right p, 
-.even .pc-right p{
+.odd .pc-info p, 
+.even .pc-info p{
   line-height: 1.5;
   font: 600 14px 'Manrope', sans-serif ;
   color: var(--c6);
 }
 
-.even .pc-right p {
+.even .pc-info p {
   text-align: left; 
 }
 
-.odd .pc-right p {
+.odd .pc-info p {
   text-align: end; 
 }
 
@@ -160,10 +206,11 @@
 .even .tooltip {
   visibility: hidden;
   position: absolute;
-  bottom: -30px;
+  bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--c2);
+  background-color: var(--blurBlack);
+  border: 1px solid rgb(99, 99, 99);
   color: var(--c4);
   padding: 5px 10px;
   border-radius: 5px;
@@ -179,13 +226,15 @@
   opacity: 1;
 }
 
-.odd .pc-right a,
-.even .pc-right a{
+.odd .pc-info a,
+.even .pc-info a{
   text-decoration: none;
   margin-top: 15px;
-  color: var(--c6);
+  color: var(--c4);
   text-align: center;
   font: 600 14px 'Manrope', sans-serif;
+  position: relative;
+  overflow: hidden;
 }
 
 .odd .gitIcon,
@@ -193,8 +242,35 @@
   font: 600 12px 'Manrope', sans-serif;
 }
 
-.odd .pc-right a:hover,
-.even .pc-right a:hover{
-  text-decoration: underline;
-  text-decoration-color: var(--c2);
+.odd .pc-info a::after,
+.even .pc-info a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0; 
+  height: 0.1px;
+  background-color: var(--c4);
+}
+
+.odd .pc-info a::after{
+  right: 0;
+  transition: width 0.3s ease, right 0.3s ease; 
+}
+
+.even .pc-info a::after{
+  left: 0;
+  transition: width 0.3s ease, left 0.3s ease; 
+}
+
+.odd .pc-info a:hover::after,
+.even .pc-info a:hover::after {
+  width: 100%; 
+}
+
+.even .pc-info a:hover::after{
+  left: 0; 
+}
+
+.odd .pc-info a:hover::after{
+  right: 0; 
 }

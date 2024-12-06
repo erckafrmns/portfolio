@@ -17,7 +17,7 @@ const Contact = () => {
     const { contacts, resume } = data; 
     const [modalMessage, setModalMessage] = useState('');
     const [isModalVisible, setIsModalVisible] = useState(false);
-    // const form = useRef();
+    const [isHovered, setIsHovered] = useState(false);
     const contactsRef = useRef();
 
 
@@ -176,7 +176,10 @@ const Contact = () => {
                             <p>{contacts.location}</p>
                         </div>
                         <div className='contact-items dl-resume'>
-                            <a href={resume} download="Resume.pdf" ><FaDownload className='contact-icons'/>  Download Resume</a>
+                            <a onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}  
+                                href={resume} download="Resume.pdf" className='resumeBTN'>
+                                <FaDownload className='contact-icons'/>  {isHovered ? "Click to Dowload" : "Download Resume"}
+                            </a>
                         </div>
                     </div>
 

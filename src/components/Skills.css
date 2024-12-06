@@ -87,25 +87,31 @@
     cursor: pointer;
     position: relative; 
     overflow: hidden;
+    transform: all 5s ease-in-out;
 }
 
-.languages-list img,
-.frameworks-list img,
-.others-list img,
-.languages-list span,
-.frameworks-list span,
-.others-list span {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out; 
+.languages-list li:hover,
+.frameworks-list li:hover,
+.others-list li:hover {
+    background: linear-gradient(45deg, rgba(0, 51, 48, 0.5), rgba(86, 141, 128, 0.5));
 }
 
 .languages-list li:hover img,
 .frameworks-list li:hover img,
-.others-list li:hover img,
-.languages-list li:hover span,
-.frameworks-list li:hover span,
-.others-list li:hover span {
-    opacity: 1;
+.others-list li:hover img{
+    animation: pulse 1.5s ease-in-out infinite; 
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1); 
+    }
 }
 
 .languages-list img,
@@ -114,6 +120,7 @@
     width: 30px;
     height: 30px;
     object-fit: contain;
+    transform: all 5s ease-in-out;
 }
 
 .languages-list li:nth-child(6) img,

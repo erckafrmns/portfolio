@@ -102,7 +102,7 @@ const Navbar = () => {
                     <li><a href="#skills"  className={activeLink === '#skills' ? 'active' : ''} onClick={() => handleNavClick('#skills')}>Skills</a></li>
                     <li><a href="#contact-me"  className={activeLink === '#contact-me' ? 'active' : ''} onClick={() => handleNavClick('#contact-me')}>Contact Me</a></li>
                     <a onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}  
-                      href={resume} download="Resume.pdf" className='hbtn resumeBTN'>
+                      href={resume} download="Resume.pdf" className='dbtn resumeBTN'>
                       {isHovered ? "Download" : "Resume"} <FaDownload />
                     </a>
                 </ul>

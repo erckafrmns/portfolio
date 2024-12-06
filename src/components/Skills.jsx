@@ -83,7 +83,7 @@ const Skills = () => {
 
                 <div ref={skillsRef} className="skill-content">
                     <h1>Skills</h1>
-                    <p>Here are some technologies I’ve worked with but I'm always eager to learn new ones and adapt to the ever-evolving field of software development. </p>
+                    <p>Here are some technologies I’ve worked with, but I'm still eager to learn new ones and adapt to the ever-evolving field of software development. </p>
                 
                     <div className="skill-list">
 

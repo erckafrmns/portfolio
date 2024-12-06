@@ -3,6 +3,8 @@ import data from '../data';
 import './Hero.css';
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
 
 
 
@@ -62,8 +64,8 @@ const Hero = () => {
                         <h3>I am a <span>{currentRole}<span className="cursor"></span></span></h3>
                         <p>{intro}</p>
                         <div className='hero-buttons'>
-                            <button className='LinkedInBTN' onClick={() => window.open(socials[2].link, '_blank')}>{socials[2].name}</button>
-                            <button className='GitHubBTN' onClick={() => window.open(socials[3].link, '_blank')}>{socials[3].name}</button>
+                            <button className='LinkedInBTN' onClick={() => window.open(socials[2].link, '_blank')}><FaLinkedin className='hs-icons'/> {socials[2].name}</button>
+                            <button className='GitHubBTN' onClick={() => window.open(socials[3].link, '_blank')}><FaGithub className='hs-icons'/> {socials[3].name}</button>
                         </div>
                     </div>
                     <div className='hero-right'>
