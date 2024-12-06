@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css'; 
 import { FaDownload } from "react-icons/fa6";
 import navlogo from '../assets/navbar-logo.png';
 import data from '../data';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 
 const Navbar = () => {
@@ -11,6 +13,28 @@ const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [activeLink, setActiveLink] = useState('#hero');
   const [isScrolled, setIsScrolled] = useState(false);
+
+
+  const navbarRef = useRef();
+
+  useGSAP(() => {
+      gsap.from(".navbar-logo", {
+          y: -200,          
+          opacity: 0,     
+          duration: 1.5,
+          stagger: 0.5,     
+          ease: 'power2.out'
+      });
+
+      gsap.from(".nav-links", {
+        y: -200,          
+        opacity: 0,     
+        duration: 1.5,  
+        stagger: 0.5,   
+        ease: 'power2.out'
+    });
+       
+  });
 
 
   // SET ACTIVE NAV LINK BASED ON CLICK
@@ -69,8 +93,8 @@ const Navbar = () => {
 
   return (
     <>
-        <div className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-            <img src={navlogo} alt="" />
+        <div ref={navbarRef} className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+            <img src={navlogo} alt="" className='navbar-logo'/>
             <div className='nav-links'>
                 <ul>
                     <li><a href="#hero"  className={activeLink === '#hero' ? 'active' : ''} onClick={() => handleNavClick('#hero')}>Home</a></li>

@@ -1,8 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import data from '../data';
 import './Hero.css';
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+
+
 
 const Hero = () => {
+
+    const heroContent = useRef();
+
+    useGSAP(() => {
+        gsap.from(".hero-middle", {
+            y: 200,          
+            opacity: 0,     
+            duration: 1.5,     
+            ease: 'power2.out',
+        });
+
+        gsap.from(".hero-right", {
+            x: 200,          
+            opacity: 0,     
+            duration: 1.5,     
+            ease: 'power2.out'
+        });
+    });
 
     // Destructure data
     const { firstname, roles, intro, socials, featuredProjects } = data; 
@@ -33,11 +55,11 @@ const Hero = () => {
     return (
         <>
             <section className='hero' id='hero'>
-                <div className='hero-content'>
-                    <div className='hero-left'>.</div>
+                <div ref={heroContent} className='hero-content'>
+                    <div className='hero-left'></div>
                     <div className='hero-middle'>
                         <h1>Hi, I'm <span>{firstname}!</span></h1>
-                        <h3>I'm a <span>{currentRole}<span className="cursor"></span></span></h3>
+                        <h3>I am a <span>{currentRole}<span className="cursor"></span></span></h3>
                         <p>{intro}</p>
                         <div className='hero-buttons'>
                             <button className='LinkedInBTN' onClick={() => window.open(socials[2].link, '_blank')}>{socials[2].name}</button>

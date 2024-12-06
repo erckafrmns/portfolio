@@ -1,11 +1,76 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import data from '../data';
 import './Skills.css';
+import gsap from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Skills = () => {
 
     const { skills } = data; 
+    const skillsRef = useRef();
+
+    useGSAP(() => {
+        
+        gsap.from(".skill-content h1, .skill-content p", {
+            y: 100,
+            opacity: 0,
+            duration: 2,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: skillsRef.current,
+                start: "top bottom+=10%", 
+                end: "center center",
+                scrub: true,
+            }
+        });
+    
+        gsap.from(".languages-list, .frameworks-list, .others-list", {
+            x: (index) => index % 2 === 0 ? -300 : 300, 
+            opacity: 0,
+            duration: 2,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: skillsRef.current,
+                start: "top bottom+=10%",
+                end: "center center", 
+                scrub: true,
+                stagger: 0.5, 
+            }
+        });
+
+        // gsap.to(".languages-list img, .frameworks-list img, .others-list img", {
+        //     opacity: 0,          
+        //     duration: 2,        
+        //     repeat: 1,              
+        //     ease: "none", 
+        //     onRepeat: () => { const images = document.querySelectorAll(".languages-list img, .frameworks-list img, .others-list img");
+        //         images.forEach(image => {
+        //             const randomChance = Math.random();
+        //             if (randomChance > 0.5) {
+        //             gsap.to(image, { opacity: 1, duration: 0.5 });
+        //             } else {
+        //             gsap.to(image, { opacity: 0, duration: 0.5 });
+        //             }
+        //         });
+        //     },
+        //     scrollTrigger: {
+        //         trigger: skillsRef.current, 
+        //         start: "top bottom+=10%",    
+        //         end: "center center",    
+                
+        //     },
+        //     onComplete: () => {
+        //         gsap.to(".languages-list img, .frameworks-list img, .others-list img", {
+        //             opacity: 1,
+        //             duration: 0.5
+        //         });
+        //     }
+        // });
+
+    });
 
     return (
         <>
@@ -16,9 +81,9 @@ const Skills = () => {
                     </svg>
                 </div>
 
-                <div className="skill-content">
+                <div ref={skillsRef} className="skill-content">
                     <h1>Skills</h1>
-                    <p>I enjoy coding and building programs, especially web applications. From designing seamless user experiences to ensuring everything functions smoothly behind the scenes, I find joy in every step of the process. <br /> Along the way, here are some languages and tools I've worked with: </p>
+                    <p>Here are some technologies I’ve worked with but I'm always eager to learn new ones and adapt to the ever-evolving field of software development. </p>
                 
                     <div className="skill-list">
 

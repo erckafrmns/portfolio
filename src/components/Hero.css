@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 4.2%;
+  overflow-x: hidden;
 }
 
 .hero-content{
@@ -33,7 +34,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 3%;
   padding-left: 2%;
   gap: 2%;
 }
@@ -52,7 +52,7 @@
 }
 
 .hero-middle h1 span{
-  color: var(--yellow);
+  color: var(--c3);
 }
 
 h3 span {
@@ -89,13 +89,11 @@ h3 span {
 }
 
 .hero-middle p{
-  width: 85%;
-  font-family: 'Manrope', sans-serif;
+  width: 86%;
+  font: 450 18px 'Maven Pro', sans-serif;
   color: var(--c4);
-  font-size: 18px;
   padding-bottom: 4%;
-  line-height: 1.8;
-  font-weight: 500;
+  line-height: 1.6;
 }
 
 .hero-buttons{
@@ -110,18 +108,40 @@ h3 span {
   font-weight: 800;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
-  border: none;
   outline: none;
   z-index: 1;
   border-radius: 5px;
+  box-shadow: rgba(50, 88, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .GitHubBTN{
-  background-color: var(--c3);
-  color: var(--c1);
+  background-color: transparent;
+  border: 3px solid var(--c3);
+  color: var(--c3);
+  
 }
 
-.GitHubBTN::before {
+.GitHubBTN:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  right: 0px;
+  transition: 0.5s;
+  top: 0.2;
+}
+
+.GitHubBTN:hover{
+  padding-right: 24px;
+  padding-left:1px;
+}
+
+.GitHubBTN:hover:after {
+  opacity: 1;
+  right: 30px;
+  font-size: 25px;
+}
+
+/* .GitHubBTN::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -135,19 +155,20 @@ h3 span {
   left: calc(2px * -2);
   right: calc(2px * -2);
   bottom: calc(2px * -2);
-}
+} */
 
 .GitHubBTN:hover{
   transform: scale(0.98);
 }
 
 .LinkedInBTN{
-  background-color: var(--c1);
+  background-color: var(--blurBlack);
+  border: 2px solid transparent;
   margin-right: 6%;
-  color: var(--c4);
+  color: var(--c3);
 }
 
-.LinkedInBTN::before{
+/* .LinkedInBTN::before{
   content: '';
   position: absolute;
   z-index: -1;
@@ -161,7 +182,7 @@ h3 span {
   left: calc(2px * -2);
   right: calc(2px * -2);
   bottom: calc(2px * -2);
-}
+} */
 
 .LinkedInBTN:hover{
   transform: scale(0.98);
@@ -187,15 +208,6 @@ h3 span {
   fill: rgba(1, 23, 21, 0.9);
 }
 
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .custom-shape-divider-hero-bottom svg {
-      width: calc(105% + 1.3px);
-      height: 153px;
-  }
-}
-
-
 .hero-right{
   width: 40%;
   height: 100%;
@@ -203,8 +215,6 @@ h3 span {
   flex-direction: column;
   justify-content: center;
   position: relative;
-  /* background-color: var(--c2); */
-  /* border: 2px solid var(--c5); */
   border-radius: 15rem 0 0 15rem/ 100% 0 0 100%;
   overflow-y: hidden;
 }
@@ -290,4 +300,13 @@ h3 span {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
+}
+
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-hero-bottom svg {
+      width: calc(105% + 1.3px);
+      height: 153px;
+  }
 }

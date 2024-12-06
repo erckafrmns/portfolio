@@ -10,23 +10,18 @@
     padding: 20px 5% 12px 5%;
     position: fixed;
     z-index: 1000;
-    transition: all 0.5s ease-in;
+    transition: all 0.5s ease-out;
 }
 
 .navbar.scrolled {
-    background-color: rgba(0,0,0,0.7);
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
+    background-color: var(--blurBlack);
+    backdrop-filter: blur(50px); 
+    -webkit-backdrop-filter: blur(50px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* .navbar h1{
-    color: var(--c3);
-    font: bold 26px 'Maven Pro', sans-serif;
-    font-weight: 800;
-} */
-
 .navbar img{
-    width: 12%;
+    width: 170px;
     object-fit: contain;
     cursor: pointer;
 }

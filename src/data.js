@@ -47,7 +47,7 @@ const data = {
     
     roles: ["Software Developer.", "Web Developer.", "Full-stack Developer."],
     
-    intro: "I have an extensive experience in creating secure and responsive web applications and programs. I also find joy in developing mobile apps and exploring various facets of software engineering.",
+    intro: "I enjoy coding and building programs, especially web applications. From designing seamless user experiences to ensuring everything functions smoothly behind the scenes, I find joy in every step of the process.",
     
     school: "Technological University of the Philippines",
     

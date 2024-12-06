@@ -23,17 +23,16 @@
 }
 
 .skill-content h1:hover{
-  color: var(--yellow);
+  color: var(--c3);
   cursor: pointer;
 }
 
 .skill-content p{
   color: var(--c4);
-  font: 400 14px 'Manrope', sans-serif;
-  padding: 10px 15rem;
+  font: 400 16px 'Maven Pro', sans-serif;
+  padding: 10px 21rem;
   text-align: center;
   line-height: 1.5;
-  margin-bottom: 10px;
 }
 
 .skill-list{
@@ -96,7 +95,7 @@
 .languages-list span,
 .frameworks-list span,
 .others-list span {
-    opacity: 0.7;
+    opacity: 1;
     transition: opacity 0.3s ease-in-out; 
 }
 
@@ -130,7 +129,7 @@
 .frameworks-list span,
 .others-list span {
     color: var(--c4);
-    font: 400 12px 'Manrope', sans-serif;
+    font: 400 12px 'Maven Pro', sans-serif;
     cursor: default;
 }
 

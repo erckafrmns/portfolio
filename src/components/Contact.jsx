@@ -6,14 +6,50 @@ import { FaLocationDot, FaDownload } from "react-icons/fa6";
 import { RiMailSendFill } from "react-icons/ri";
 import './Contact.css';
 import data from '../data';
-
+import success from '../assets/success.gif'
+import gsap from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger)
 
 const Contact = () => {
 
     const { contacts, resume } = data; 
     const [modalMessage, setModalMessage] = useState('');
     const [isModalVisible, setIsModalVisible] = useState(false);
-    const form = useRef();
+    // const form = useRef();
+    const contactsRef = useRef();
+
+
+    useGSAP(() => {
+
+        gsap.from(".contacts", {
+            x: 200,
+            opacity: -2,
+            duration: 3,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: contactsRef.current,
+                start: "center bottom",
+                end: "center center",
+                scrub: true,
+            }
+        });
+
+        gsap.from(".contact-form", {
+            x: -200,
+            opacity: -2,
+            duration: 3,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: contactsRef.current,
+                start: "center bottom",
+                end: "center center",
+                scrub: true,
+            }
+        });
+
+    });
 
     
     const [formData, setFormData] = useState({
@@ -37,6 +73,23 @@ const Contact = () => {
             user_email: '',
             message: ''
         });
+    };
+
+
+    const copyToClipboard = (text) => {
+        navigator.clipboard.writeText(text)
+        .then(() => {
+            setModalMessage('Copied Successfully!');
+            setIsModalVisible(true);
+        })
+        .catch(err => console.error('Failed to copy text: ', err));
+    };
+
+    const handleCopyClick = (event) => {
+        const text = event.currentTarget.querySelector('p')?.textContent;
+        if (text) {
+            copyToClipboard(text);
+        }
     };
 
 
@@ -104,21 +157,21 @@ const Contact = () => {
 
     return (
         <>
-            <section className='contact-me' id='contact-me'>                
+            <section ref={contactsRef} className='contact-me' id='contact-me'>                
                 <h1>Contact Me</h1>
                 <p>Looking to collaborate or have an opportunity to discuss?<br></br>Feel free to reach out! </p>
                 
                 <div className='contact-container'>
                     <div className='contacts'>
-                        <div className='contact-items'>
+                        <div className='contact-items' onClick={handleCopyClick}>
                             <FaPhoneAlt  className='contact-icons'/>
                             <p>{contacts.phone}</p>
                         </div>
-                        <div className='contact-items'>
+                        <div className='contact-items' onClick={handleCopyClick}>
                             <MdEmail className='contact-icons'/>
                             <p>{contacts.email}</p>
                         </div>
-                        <div className='contact-items'>
+                        <div className='contact-items' onClick={handleCopyClick}>
                             <FaLocationDot className='contact-icons'/>
                             <p>{contacts.location}</p>
                         </div>
@@ -148,6 +201,7 @@ const Contact = () => {
             {isModalVisible && (
                 <div className="modal">
                     <div className="modal-content">
+                        <img src={success} alt="" />
                         <p>{modalMessage}</p>
                         <button onClick={closeModal}>Close</button>
                     </div>

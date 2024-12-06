@@ -1,18 +1,61 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import data from '../data';
 import './Projects.css';
 import { BsBoxArrowUpRight } from "react-icons/bs";
+import gsap from "gsap";
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Projects = () => {
 
     const { projects } = data; 
+    const projectRef = useRef();
+
+
+    useGSAP(() => {
+        const oddItems = projectRef.current.querySelectorAll('.odd');
+        const evenItems = projectRef.current.querySelectorAll('.even');
+        
+        oddItems.forEach(item => {
+            gsap.from(item, {
+                x: -300,
+                opacity: -1,
+                duration: 3,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top bottom",
+                    end: "center center",
+                    scrub: true,
+                }
+            });
+        });
+
+        evenItems.forEach(item => {
+            gsap.from(item, {
+                x: 500,
+                opacity: -1,
+                duration: 3,
+                ease: 'power2.out',
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top bottom",
+                    end: "center center",
+                    scrub: true,
+                }
+            });
+        });
+    });
+
+
 
     return (
         <>
             <section className='projects' id='projects'>
                 <div className="project-bg"></div>
-                <div className='project-content'>
+                <div ref={projectRef} className='project-content'>
                     <h1>Projects</h1>
                     <ul>
                         {projects.map((project, index) => (

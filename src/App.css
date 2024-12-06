@@ -3,20 +3,17 @@
 :root{
   --c1:#000000;
   --c2: #023330;
-  --c3: #045f59;
-  --c4: #eaf8e7;
-  --c6: #e6e6e6;
+  --c3: #05877f;
+  --c4: #cccccc;
   --c5: #034945;
+  --c6: #dbdbdb;
 
   --blurBlack:rgba(1, 23, 21, 0.9);
 
-  --before: #379777;
-  
   --bg1: #113736;
   --bg2: #04080b;
   --pholder: #e2f6dd;
-  --red: rgb(187, 66, 66);
-  --yellow: #f8c000;
+  --red: #702828;
 }
 
 * {
@@ -36,6 +33,65 @@ html{
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, p, span{
   cursor: default;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+.back-to-top-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: -4%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  transition: opacity 0.3s ease-in-out;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+.back-to-top-btn {
+  background: none;
+  border: none;
+  color: var(--c3);
+  font-size: 40px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.back-to-top-text {
+  margin-right: 10px;   
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 16px;
+  color: var(--c4);
+  border-radius: 5px;
+  border: 2px solid var(--c4);
+  padding: 5px 12px;
+  margin-bottom: 12px;
+}
+
+.back-to-top-btn:hover + .back-to-top-text {
+  opacity: 1;
+}
+
+
+.back-to-top-wrapper.show {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateX(-50%) translateY(0);
+  }
+  50% {
+      transform: translateX(-50%) translateY(-10px); 
+  }
+  100% {
+      transform: translateX(-50%) translateY(0);
+  }
 }

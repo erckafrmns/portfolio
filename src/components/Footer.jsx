@@ -11,7 +11,7 @@ const Footer = () => {
             <div className='footer'>
                 <img src={profile} alt="" className='profileIMG'/>
                 <h1>{firstname} {lastname}</h1>
-                <p>If you’re looking for someone who is passionate, eager to learn, and ready to contribute, I’d be thrilled to play a role in your team’s success.</p>
+                <p>If you’re looking for someone who is passionate, eager to learn, and ready to contribute, I’d be thrilled to bring my skills and enthusiasm to your team.</p>
                 <div className='footer-socials'>
                     <ul>
                         <li>
