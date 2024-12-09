@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .skill-content h1{
@@ -30,7 +31,7 @@
 .skill-content p{
   color: var(--c4);
   font: 400 16px 'Maven Pro', sans-serif;
-  padding: 10px 21rem;
+  padding: 10px 25%;
   text-align: center;
   line-height: 1.5;
 }
@@ -48,11 +49,11 @@
 .skill-list-items{
   height: 90%;
   display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
 .languages, .frameworks, .others{
-  width: 30%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -84,7 +85,6 @@
     border-radius: 10px;
     box-shadow: rgba(48, 55, 55, 0.12) 0px 1px 3px, rgba(48, 55, 55, 0.24) 0px 1px 2px;
     background-color: var(--blurBlack);
-    cursor: pointer;
     position: relative; 
     overflow: hidden;
     transform: all 5s ease-in-out;
@@ -188,4 +188,218 @@
 
 .skills .custom-shape-divider-skills-top .shape-fill {
   fill: rgba(1, 23, 21, 0.9);
+}
+
+
+@media (max-width: 480px){
+  
+}
+
+
+
+
+
+/* @media (min-width: 1440px) {
+
+  .skill-content h1{
+    font-size: 50px;
+  }
+
+  .skill-content p{
+    font-size: 20px;
+    padding: 10px 15rem;
+  }
+
+  .skill-list{
+    height: 65%;
+  }
+
+  .skill-list-items{
+    height: 100%;
+    width: auto;
+  }
+
+  .languages-list li,
+  .frameworks-list li,
+  .others-list li{
+    height: 120px;
+  }
+} */
+
+/* @media (max-width: 1280px){
+  .skill-content p{
+    padding: 10px 15rem;
+  }
+
+  .skill-list{
+    height: 70%;
+  }
+} */
+
+/* @media (max-width: 1024px) {
+  .skill-content p {
+    font-size: 0.9rem;
+    padding: 10px 15%;
+  }
+
+  .skill-list-items {
+    max-width: 300px;
+  }
+
+  .languages-list li,
+  .frameworks-list li,
+  .others-list li {
+    width: 60px;
+    height: 90px;
+  }
+
+  .languages-list img,
+  .frameworks-list img,
+  .others-list img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .languages-list span,
+  .frameworks-list span,
+  .others-list span {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-content p {
+    padding: 10px;
+  }
+
+  .languages-list li,
+  .frameworks-list li,
+  .others-list li {
+    width: 50px;
+    height: 80px;
+  }
+
+  .languages-list img,
+  .frameworks-list img,
+  .others-list img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .languages-list span,
+  .frameworks-list span,
+  .others-list span {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .skill-content p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
+  .languages-list li,
+  .frameworks-list li,
+  .others-list li {
+    width: 40px;
+    height: 70px;
+  }
+
+  .languages-list img,
+  .frameworks-list img,
+  .others-list img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .languages-list span,
+  .frameworks-list span,
+  .others-list span {
+    font-size: 0.6rem;
+  }
+} */
+
+
+@media (min-width: 1920px){
+
+  .skill-content{
+    width: 100%;
+  }
+
+  .skill-content h1{
+    font-size: 60px;
+  }
+
+  .skill-content p{
+    font-size: 24px;
+  }
+
+  .skill-list{
+    gap: 25px;
+  }
+
+  .skill-list-items{
+    height: 100%;
+    width: auto;
+  }
+
+  .languages-list li,
+  .frameworks-list li,
+  .others-list li{
+    height: 165px;
+  }
+
+  .languages-list img,
+  .frameworks-list img,
+  .others-list img {
+      width: 40px;
+      height: 40px;
+  }
+
+  .languages-list li:nth-child(6) img,
+  .languages-list li:nth-child(7) img,
+  .frameworks-list li:nth-child(3) img,
+  .others-list li:nth-child(6) img{
+    width: 60px;
+    height: 40px;
+  }
+
+  .languages-list span,
+  .frameworks-list span,
+  .others-list span{
+    font-size: 18px;
+  }
+
+  .languages-list li:nth-child(1),
+  .languages-list li:nth-child(2),
+  .frameworks-list li:nth-child(1),
+  .frameworks-list li:nth-child(2),
+  .others-list li:nth-child(1),
+  .others-list li:nth-child(2),
+  .languages-list li:nth-child(6),
+  .languages-list li:nth-child(7),
+  .frameworks-list li:nth-child(4),
+  .frameworks-list li:nth-child(5){
+    width: 44%;
+  }
+
+  .languages-list li:nth-child(3),
+  .languages-list li:nth-child(4),
+  .languages-list li:nth-child(5),
+  .others-list li:nth-child(3),
+  .others-list li:nth-child(4),
+  .others-list li:nth-child(5){
+      width: 30.5%;
+  }
+
+  .frameworks-list li:nth-child(3),
+  .others-list li:nth-child(6){
+    width: 65%;
+  }
+
 }

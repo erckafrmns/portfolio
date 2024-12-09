@@ -16,7 +16,6 @@ function App() {
     const handleScroll = () => {
         const distanceFromBottom = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
         
-        // Show the button when we're within 100px of the bottom of the page
         if (distanceFromBottom <= 400) {
             setShowBackToTop(true);
         } else {

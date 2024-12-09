@@ -229,8 +229,11 @@
 
 .contact-form button:active {
   transform: scale(0.95); 
-  color: var(--pholder);
   transition: transform 0.1s ease-in-out; 
+}
+
+.contact-form button:hover{
+  opacity: 85%;
 }
 
 
@@ -279,3 +282,179 @@
   height: 60px;
 }
 
+
+@media (max-width: 375px){
+  
+  .contact-me{
+    padding: 7% 2% 3.8% 2%;
+  }
+
+  .contact-me h1{
+    font-size: 35px;
+  }
+
+  .contact-me p{
+    font-size: 12px;
+  }
+
+  .contact-container{
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    height: 75%;
+  }
+
+  .vertical-line2{
+    height: 1px; 
+    width: 90%; 
+  }
+
+  .contacts, .contact-form{
+    width: 95%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px){
+  
+  .contact-me{
+    padding: 7% 2% 3.8% 2%;
+  }
+
+  .contact-me h1{
+    font-size: 35px;
+  }
+
+  .contact-me p{
+    font-size: 12px;
+  }
+
+  .contact-container{
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    height: 75%;
+  }
+
+  .vertical-line2{
+    height: 1px; 
+    width: 90%; 
+  }
+
+  .contacts, .contact-form{
+    width: 95%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+  .contact-me{
+    padding: 7% 2% 3.8% 2%;
+  }
+
+  .contact-me h1{
+    font-size: 45px;
+  }
+
+  .contact-me p{
+    font-size: 16px;
+  }
+
+  .contact-items p{
+    font-size: 14px;
+  }
+
+  .contact-container{
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+    height: 75%;
+  }
+
+  .vertical-line2{
+    height: 1px; 
+    width: 90%; 
+  }
+
+  .contacts, .contact-form{
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1279px){
+  .contact-me{
+    padding: 7% 2% 3.8% 2%;
+  }
+
+  .contact-me h1{
+    font-size: 48px;
+  }
+
+  .vertical-line2{
+    height: 100%;
+  }
+
+  .contact-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2% 5% 0 5%;
+    width: 100%;
+    height: 80%;
+    margin-top: 1%;
+  }
+
+  .contacts{
+    padding: 1% 4% 10% 0;
+  }
+
+  .contact-form{
+    padding: 1% 0 2% 4%;
+  }
+
+  .contact-form, .contacts{
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .contact-form input, .contact-form textarea{
+    font-size: 18px;
+    padding: 5% 25px;
+  }
+
+  .contact-items{
+    font-size: 18px;
+    padding: 8% 25px;
+  }
+
+  .dl-resume{
+    padding: 0;
+  }
+
+  .dl-resume a{
+    padding: 8% 25px;
+    font-size: 18px;
+  }
+
+  .contact-form button{
+    padding: 6%;
+    font-size: 18px;
+  }
+
+
+
+}

@@ -58,16 +58,21 @@ const Hero = () => {
         <>
             <section className='hero' id='hero'>
                 <div ref={heroContent} className='hero-content'>
-                    <div className='hero-left'></div>
-                    <div className='hero-middle'>
-                        <h1>Hi, I'm <span>{firstname}!</span></h1>
-                        <h3>I am a <span>{currentRole}<span className="cursor"></span></span></h3>
-                        <p>{intro}</p>
-                        <div className='hero-buttons'>
-                            <button className='LinkedInBTN' onClick={() => window.open(socials[2].link, '_blank')}><FaLinkedin className='hs-icons'/> {socials[2].name}</button>
-                            <button className='GitHubBTN' onClick={() => window.open(socials[3].link, '_blank')}><FaGithub className='hs-icons'/> {socials[3].name}</button>
+                    
+                    <div className="hero-left">
+
+                        <div className='hero-left-content'>
+                            <h1>Hi, I'm <span>{firstname}!</span></h1>
+                            <h3>I am a <span>{currentRole}<span className="cursor"></span></span></h3>
+                            <p>{intro}</p>
+                            <div className='hero-buttons'>
+                                <button className='LinkedInBTN' onClick={() => window.open(socials[2].link, '_blank')}><FaLinkedin className='hs-icons'/> {socials[2].name}</button>
+                                <button className='GitHubBTN' onClick={() => window.open(socials[3].link, '_blank')}><FaGithub className='hs-icons'/> {socials[3].name}</button>
+                            </div>
                         </div>
+                        
                     </div>
+
                     <div className='hero-right'>
                         {/* <h2>Some of my projects:</h2> */}
                         <div className="slider">

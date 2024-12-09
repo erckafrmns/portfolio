@@ -95,3 +95,18 @@ h1, h2, h3, h4, p, span{
       transform: translateX(-50%) translateY(0);
   }
 }
+
+
+@media (max-width: 480px){
+  .back-to-top-wrapper{
+    right: -10%;
+  }
+
+  .back-to-top-btn{
+    font-size: 30px;
+  }
+
+  .back-to-top-text{
+    font-size: 12px;
+  }
+}

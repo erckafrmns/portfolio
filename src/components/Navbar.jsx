@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css'; 
 import { FaDownload } from "react-icons/fa6";
+import { IoIosMenu, IoIosClose } from "react-icons/io"; 
 import navlogo from '../assets/navbar-logo.png';
 import data from '../data';
 import gsap from "gsap";
@@ -13,8 +14,7 @@ const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
   const [activeLink, setActiveLink] = useState('#hero');
   const [isScrolled, setIsScrolled] = useState(false);
-
-
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const navbarRef = useRef();
 
   useGSAP(() => {
@@ -90,12 +90,18 @@ const Navbar = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
 
   return (
     <>
         <div ref={navbarRef} className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <img src={navlogo} alt="" className='navbar-logo'/>
-            <div className='nav-links'>
+
+            <div className="navbar-toggle" onClick={() => {setIsNavOpen(!isNavOpen); console.log('isNavOpen:', !isNavOpen);}}>
+                {isNavOpen ? <IoIosClose size={30} /> : <IoIosMenu size={30} />}
+            </div>
+
+            <div className={`nav-links ${isNavOpen ? 'show' : ''}`}>
                 <ul>
                     <li><a href="#hero"  className={activeLink === '#hero' ? 'active' : ''} onClick={() => handleNavClick('#hero')}>Home</a></li>
                     <li><a href="#projects"  className={activeLink === '#projects' ? 'active' : ''} onClick={() => handleNavClick('#projects')}>Projects</a></li>
