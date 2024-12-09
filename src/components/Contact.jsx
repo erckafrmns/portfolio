@@ -33,6 +33,7 @@ const Contact = () => {
                 start: "center bottom",
                 end: "center center",
                 scrub: true,
+                once: true,
             }
         });
 
@@ -46,6 +47,7 @@ const Contact = () => {
                 start: "center bottom",
                 end: "center center",
                 scrub: true,
+                once: true,
             }
         });
 
@@ -183,7 +185,7 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="vertical-line2"></div>
+                    <div className="divider-line"></div>
 
                     <form className='contact-form' onSubmit={handleSubmit}>
                         <input type="text" id="user_name" name="user_name" placeholder="Name" value={formData.user_name} onChange={handleChange} required/>

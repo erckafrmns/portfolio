@@ -42,7 +42,6 @@
 
 .project-content h1:hover{
   color: var(--c3);
-  cursor: pointer;
 }
 
 .project-content ul{

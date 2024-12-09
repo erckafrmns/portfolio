@@ -7,6 +7,7 @@
   justify-content: center;
   padding: 9% 5% 3% 5%;
   position: relative;
+  overflow: hidden;
 }
 
 .skill-content{
@@ -25,7 +26,6 @@
 
 .skill-content h1:hover{
   color: var(--c3);
-  cursor: pointer;
 }
 
 .skill-content p{

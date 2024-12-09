@@ -9,7 +9,7 @@
     padding: 7% 10% 3.8% 10%;
     width: 100%;
     margin-bottom: 4%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .contact-me h1{
@@ -22,7 +22,6 @@
 
 .contact-me h1:hover{
   color: var(--c3);
-  cursor: pointer;
 }
 
 .contact-me p{
@@ -30,6 +29,7 @@
   font-family: "Maven Pro", sans-serif;
   font-size: 16px;
   text-align: center;
+  padding: 0 5% 0 5%;
 }
 
 .contact-container{
@@ -43,7 +43,7 @@
   margin-top: 1%;
 }
 
-.vertical-line2{
+.divider-line{
   width: 1px; 
   height: 100%; 
   background-color: var(--c4); 
@@ -69,6 +69,7 @@
   width: 85%;
   border-radius: 5px;
   cursor: pointer;
+  overflow-x: hidden;
 }
 
 .contact-items p{
@@ -282,86 +283,29 @@
   height: 60px;
 }
 
-
-@media (max-width: 375px){
-  
-  .contact-me{
-    padding: 7% 2% 3.8% 2%;
-  }
-
+@media (max-width: 390px){
   .contact-me h1{
     font-size: 35px;
   }
 
   .contact-me p{
+    font-size: 14px;
+  }
+
+  .contact-items p, .contact-form input, .contact-form textarea,
+  .dl-resume a, .contact-form button{
     font-size: 12px;
-  }
-
-  .contact-container{
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 20px;
-    height: 75%;
-  }
-
-  .vertical-line2{
-    height: 1px; 
-    width: 90%; 
-  }
-
-  .contacts, .contact-form{
-    width: 95%;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
   }
 }
 
-@media (max-width: 480px){
-  
+@media (max-width: 768px){
   .contact-me{
-    padding: 7% 2% 3.8% 2%;
+    padding: 7% 2% 50px 2%;
+    height: auto;
   }
 
   .contact-me h1{
-    font-size: 35px;
-  }
-
-  .contact-me p{
-    font-size: 12px;
-  }
-
-  .contact-container{
-    flex-direction: column-reverse;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 20px;
-    height: 75%;
-  }
-
-  .vertical-line2{
-    height: 1px; 
-    width: 90%; 
-  }
-
-  .contacts, .contact-form{
-    width: 95%;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px){
-  .contact-me{
-    padding: 7% 2% 3.8% 2%;
-  }
-
-  .contact-me h1{
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .contact-me p{
@@ -376,11 +320,13 @@
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     align-items: center;
+    justify-content: center;
     gap: 30px;
-    height: 75%;
+    height: auto;
+    margin-top: 30px;
   }
 
-  .vertical-line2{
+  .divider-line{
     height: 1px; 
     width: 90%; 
   }
@@ -392,19 +338,38 @@
     align-items: center;
     gap: 10px;
   }
+
+  .contact-items, .contact-form input, .contact-form textarea{
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .dl-resume{
+    padding: 0;
+  }
+
+  .dl-resume a, .contact-form button{
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .contact-form-btn{
+    width: 90%
+  }
 }
 
-@media (min-width: 769px) and (max-width: 1279px){
+@media (min-width: 769px) and (max-width: 1280px){
   .contact-me{
     padding: 7% 2% 3.8% 2%;
   }
 
   .contact-me h1{
-    font-size: 48px;
+    font-size: 45px;
   }
 
-  .vertical-line2{
-    height: 100%;
+  .divider-line{
+    align-self: center;
+    height: 90%;
   }
 
   .contact-container{
@@ -414,47 +379,33 @@
     justify-content: center;
     padding: 2% 5% 0 5%;
     width: 100%;
-    height: 80%;
+    height: auto;
     margin-top: 1%;
   }
 
   .contacts{
-    padding: 1% 4% 10% 0;
+    padding: 20px 4% 10% 0;
   }
 
   .contact-form{
-    padding: 1% 0 2% 4%;
+    padding: 20px 0 2% 4%;
   }
 
   .contact-form, .contacts{
-    justify-content: center;
     gap: 20px;
   }
 
-  .contact-form input, .contact-form textarea{
-    font-size: 18px;
-    padding: 5% 25px;
-  }
-
-  .contact-items{
-    font-size: 18px;
-    padding: 8% 25px;
+  .contact-items, .contact-form input, .contact-form textarea{
+    font-size: 16px;
+    padding: 20px 25px;
   }
 
   .dl-resume{
     padding: 0;
   }
 
-  .dl-resume a{
-    padding: 8% 25px;
-    font-size: 18px;
+  .contact-form button, .dl-resume a{
+    padding: 18px;
+    font-size: 16px;
   }
-
-  .contact-form button{
-    padding: 6%;
-    font-size: 18px;
-  }
-
-
-
 }

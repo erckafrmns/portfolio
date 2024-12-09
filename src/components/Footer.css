@@ -30,6 +30,7 @@
 .footer h1{
     font: 600 25px 'Maven Pro', sans-serif;
     color: var(--c4);
+    text-align: center;
 }
 
 .footer p{
@@ -67,6 +68,7 @@
     color: var(--c4);
     font: 400 12px 'Manrope', sans-serif;
     padding-top: 20px;
+    text-align: center;
 }
 
 @media (min-width: 1920px){

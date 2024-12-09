@@ -98,7 +98,7 @@ const data = {
         name: "Ang Tipo Kong Kwento",
         img: project1,
         description: "This is a web-based application that generates child-friendly Tagalog stories with the use of Artificial Intelligence.",
-        link: "https://www.facebook.com/EriiSsi",
+        link: "https://github.com/erckafrmns/ang-tipo-kong-kwento",
         languages: [
           { icon: <FaReact />, color: "#61DAFB", name: "React" },
           { icon: <FaPython />, color: "#306998", name: "Python" },
@@ -111,7 +111,7 @@ const data = {
         name: "CampusCompass",
         img: project2,
         description: "CampusCompass is an innovative campus map tailored for the Technological University of the Philippines - Manila.",
-        link: "https://www.facebook.com/EriiSsi",
+        link: "https://github.com/erckafrmns/campus-compass",
         languages: [
           { icon: <BiLogoTypescript />, color: "#3178C6", name: "TypeScript" },
           { icon: <FaHtml5 />, color: "#E34F26", name: "HTML5" },
@@ -123,7 +123,7 @@ const data = {
         name: "Markdown to HTML Converter",
         img: project3,
         description: "Markdown to HTML Converter is a web-based application that lets you convert Markdown to HTML seamlessly.",
-        link: "https://www.facebook.com/EriiSsi",
+        link: "https://github.com/erckafrmns/markdown-to-html",
         languages: [
           { icon: <FaHtml5 />, color: "#E34F26", name: "HTML5" },
           { icon: <FaCss3Alt />, color: "#1572B6", name: "CSS3" },
@@ -136,7 +136,7 @@ const data = {
         name: "Properties Settlement",
         img: project4,
         description: "This is a web app that enables users to settle their inheritance or property using the sealed bid method.",
-        link: "https://www.facebook.com/EriiSsi",
+        link: "https://github.com/erckafrmns/properties-settlement",
         languages: [
           { icon: <FaHtml5 />, color: "#E34F26", name: "HTML5" },
           { icon: <FaCss3Alt />, color: "#1572B6", name: "CSS3" },

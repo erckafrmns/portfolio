@@ -76,7 +76,7 @@ const Projects = () => {
                                           </div>
                                         ))}
                                     </div>
-                                    <a href={project.link} className='gitBTN'>Github Repo <BsBoxArrowUpRight className='gitIcon'/></a>
+                                    <a href={project.link} className='gitBTN' target="_blank" rel="noopener noreferrer">Github Repo <BsBoxArrowUpRight className='gitIcon'/></a>
                                 </div>
                             </li>
                         ))}
