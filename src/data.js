@@ -21,13 +21,13 @@ import gmail from './assets/socials/gmail.png';
 import linkedin from './assets/socials/linkedin.png';
 import github from './assets/socials/github.png';
 import project1 from './assets/projects/1.png';
-import project2 from './assets/projects/2.png';
-import project3 from './assets/projects/3.png';
+import project2 from './assets/projects/campuscompass.gif';
+import project3 from './assets/projects/markdowntohtml.gif';
 import project4 from './assets/projects/4.png';
-import featured1 from './assets/projects/featured/15.png';
-import featured2 from './assets/projects/featured/16.png';
-import featured3 from './assets/projects/featured/17.png';
-import featured4 from './assets/projects/featured/16.png';
+import featured1 from './assets/projects/featured/1.png';
+import featured2 from './assets/projects/featured/2.png';
+import featured3 from './assets/projects/featured/3.png';
+import featured4 from './assets/projects/featured/4.png';
 import profile from './assets/Formanes.jpg';
 import resume from './assets/Resume.pdf';
 import { FaReact, FaPython, FaDocker, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa6";
@@ -97,7 +97,7 @@ const data = {
       {
         name: "Ang Tipo Kong Kwento",
         img: project1,
-        description: "This is a web-based application that generates child-friendly Tagalog stories with the use of Artificial Intelligence.",
+        description: "Ang Tipo Kong Kwento is an ongoing project that aims to develop an AI system that generates engaging and educational Tagalog stories for young children. The goal is to provide stories that will entertain kids, foster a love for reading, impart valuable lessons and promote Filipino culture. ",
         link: "https://github.com/erckafrmns/ang-tipo-kong-kwento",
         languages: [
           { icon: <FaReact />, color: "#61DAFB", name: "React" },
@@ -110,7 +110,7 @@ const data = {
       {
         name: "CampusCompass",
         img: project2,
-        description: "CampusCompass is an innovative campus map tailored for the Technological University of the Philippines - Manila.",
+        description: "CampusCompass is a web application designed to improve navigation within the Technological University of the Philippines (TUP)-Manila campus. It integrates GPS technology and point-to-point pathfinding to create a user-friendly map for students, faculty, and visitors. The application includes detailed campus information, such as building locations, facilities, and emergency information, to enhance safety and make campus exploration more efficient.",
         link: "https://github.com/erckafrmns/campus-compass",
         languages: [
           { icon: <BiLogoTypescript />, color: "#3178C6", name: "TypeScript" },
@@ -122,7 +122,7 @@ const data = {
       {
         name: "Markdown to HTML Converter",
         img: project3,
-        description: "Markdown to HTML Converter is a web-based application that lets you convert Markdown to HTML seamlessly.",
+        description: "The system simplifies converting Markdown to HTML, making it easier for users to prepare web-friendly content. It allows users to input Markdown text directly or upload files for seamless conversion. The goal is to provide a user-friendly tool that enhances accessibility and usability for content creators and developers.",
         link: "https://github.com/erckafrmns/markdown-to-html",
         languages: [
           { icon: <FaHtml5 />, color: "#E34F26", name: "HTML5" },
@@ -135,7 +135,7 @@ const data = {
       {
         name: "Properties Settlement",
         img: project4,
-        description: "This is a web app that enables users to settle their inheritance or property using the sealed bid method.",
+        description: "This project is a web-based application that applies the Sealed Bid Method, a fair division protocol in game theory, to resolve inheritance disputes. It ensures secure bidding through unique links and passwords, preventing unauthorized access. The primary aim is to offer a fair and efficient solution for dividing inheritance items among heirs, minimizing conflicts and promoting equitable distribution.",
         link: "https://github.com/erckafrmns/properties-settlement",
         languages: [
           { icon: <FaHtml5 />, color: "#E34F26", name: "HTML5" },
