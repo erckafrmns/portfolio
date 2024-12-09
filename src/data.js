@@ -110,7 +110,7 @@ const data = {
       {
         name: "CampusCompass",
         img: project2,
-        description: "CampusCompass is a web application designed to improve navigation within the Technological University of the Philippines (TUP)-Manila campus. It integrates GPS technology and point-to-point pathfinding to create a user-friendly map for students, faculty, and visitors. The application includes detailed campus information, such as building locations, facilities, and emergency information, to enhance safety and make campus exploration more efficient.",
+        description: "CampusCompass is a web application designed to improve navigation within the Technological University of the Philippines (TUP) -Manila campus. It integrates GPS technology and point-to-point pathfinding to create a user-friendly map for students, faculty, and visitors. The application includes detailed campus information, such as building locations, facilities, and emergency information, to enhance safety and make campus exploration more efficient.",
         link: "https://github.com/erckafrmns/campus-compass",
         languages: [
           { icon: <BiLogoTypescript />, color: "#3178C6", name: "TypeScript" },

@@ -191,7 +191,7 @@
 }
 
 
-@media (max-width: 390px){
+@media (max-width: 391px){
   .skills{
     min-height: auto;
     height: auto;
@@ -252,7 +252,7 @@
   
 }
 
-@media (min-width: 391px) and (max-width: 617px){
+@media (min-width: 391px) and (max-width: 618px){
   .skills{
     min-height: auto;
     height: auto;
@@ -305,7 +305,7 @@
 
 }
 
-@media (min-width: 618px) and (max-width: 768px){
+@media (min-width: 618px) and (max-width: 769px){
   .skills{
     min-height: auto;
     height: auto;
@@ -408,7 +408,7 @@
 }
 
 
-@media (min-width: 1920px){
+@media (min-width: 1919px){
 
   .skill-content{
     width: 100%;

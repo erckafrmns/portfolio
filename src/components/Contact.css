@@ -298,7 +298,7 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 769px){
   .contact-me{
     padding: 7% 2% 50px 2%;
     height: auto;
@@ -358,7 +358,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 1280px){
+@media (min-width: 769px) and (max-width: 1281px){
   .contact-me{
     padding: 7% 2% 3.8% 2%;
   }
@@ -474,7 +474,7 @@
 
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1919px){
   .contact-me h1{
     font-size: 60px;
   }
