@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.237a455a.css",
-    "main.js": "/portfolio/static/js/main.94a57016.js",
+    "main.css": "/portfolio/static/css/main.84d7ca2e.css",
+    "main.js": "/portfolio/static/js/main.caaf8623.js",
     "static/js/453.acca0757.chunk.js": "/portfolio/static/js/453.acca0757.chunk.js",
     "static/media/campuscompass.gif": "/portfolio/static/media/campuscompass.5e9509b75bc8ed13d85b.gif",
     "static/media/markdowntohtml.gif": "/portfolio/static/media/markdowntohtml.cff4fbabe139256dadd9.gif",
@@ -12,8 +12,8 @@
     "static/media/success.gif": "/portfolio/static/media/success.6a77d3d1f8a7c817c1b5.gif",
     "static/media/React.png": "/portfolio/static/media/React.81ed438b18e24116794d.png",
     "static/media/PostgreSQL.png": "/portfolio/static/media/PostgreSQL.2874ca4580dff39a8cc6.png",
-    "static/media/navbar-logo.png": "/portfolio/static/media/navbar-logo.f968e92668b673a17e52.png",
-    "static/media/Resume.pdf": "/portfolio/static/media/Resume.00ec06dccb52dd665633.pdf",
+    "static/media/navbar-logo.png": "/portfolio/static/media/navbar-logo.5c28066bb254244d174d.png",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.c0efc94eba6d165bc86c.pdf",
     "static/media/Laravel.png": "/portfolio/static/media/Laravel.be3f622df04a403a80e5.png",
     "static/media/SQL.png": "/portfolio/static/media/SQL.85fb38d6773862e917f4.png",
     "static/media/Formanes.jpg": "/portfolio/static/media/Formanes.332117b0d453cb2370bb.jpg",
@@ -34,12 +34,12 @@
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.4d448006c80a12a33a59.png",
     "static/media/ExpressJS.png": "/portfolio/static/media/ExpressJS.9b344d7469dbbdc76754.png",
     "index.html": "/portfolio/index.html",
-    "main.237a455a.css.map": "/portfolio/static/css/main.237a455a.css.map",
-    "main.94a57016.js.map": "/portfolio/static/js/main.94a57016.js.map",
+    "main.84d7ca2e.css.map": "/portfolio/static/css/main.84d7ca2e.css.map",
+    "main.caaf8623.js.map": "/portfolio/static/js/main.caaf8623.js.map",
     "453.acca0757.chunk.js.map": "/portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.237a455a.css",
-    "static/js/main.94a57016.js"
+    "static/css/main.84d7ca2e.css",
+    "static/js/main.caaf8623.js"
   ]
 }
