@@ -52,11 +52,11 @@
 
 .contacts{
   width: 39%;
-  padding: 1% 4% 4% 0;
+  padding: 2% 4% 4% 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: flex-end;
+  gap: 30px;
 }
 
 .contact-items{
@@ -161,11 +161,11 @@
 
 .contact-form{
   width: 60%;
-  padding: 1% 0 0 4%;
+  padding: 2% 0 0 4%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: flex-start;
+  gap: 30px;
 }
 
 .contact-form input, .contact-form textarea{
@@ -377,7 +377,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2% 5% 0 5%;
+    padding: 2% 0 0 0;
     width: 100%;
     height: auto;
     margin-top: 1%;
@@ -407,5 +407,143 @@
   .contact-form button, .dl-resume a{
     padding: 18px;
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1534px){
+  .contact-container{
+    padding: 2% 0 0 0;
+  }
+}
+
+@media (min-width: 1537px) and (max-width: 1919px){
+  .contact-me h1{
+    font-size: 55px;
+  }
+
+  .contact-me p{
+    font-size: 20px;
+  }
+
+  .contact-items p{
+    font-size: 16px;
+  }
+
+  .contacts{
+    padding: 40px 4% 10% 0;
+  }
+
+  .contact-form{
+    padding: 40px 0 2% 4%;
+  }
+
+  .contact-form, .contacts{
+    gap: 30px;
+  }
+
+  .contact-items, .contact-form input, .contact-form textarea{
+    font-size: 16px;
+    padding: 25px 25px;
+  }
+
+  .dl-resume{
+    padding: 0;
+  }
+
+  .contact-form button, .dl-resume a{
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .modal{
+    padding: 40px 50px;
+  }
+
+  .modal p{
+    font-size: 16px;
+  }
+
+  .modal button{
+    font-size: 14px;
+  }
+
+  .modal-content img{
+    width: 65px;
+    height: 65px;
+  }
+
+}
+
+@media (min-width: 1920px){
+  .contact-me h1{
+    font-size: 60px;
+  }
+
+  .contact-me p{
+    font-size: 24px;
+  }
+
+  .divider-line{
+    align-self: center;
+    height: 90%;
+  }
+
+  .contact-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2% 0 0 0;
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+  }
+
+  .contacts{
+    padding: 60px 4% 10% 0;
+  }
+
+  
+  .contact-items p{
+    font-size: 18px;
+  }
+
+  .contact-form{
+    padding: 60px 0 2% 4%;
+  }
+
+  .contact-form, .contacts{
+    gap: 30px;
+  }
+
+  .contact-items, .contact-form input, .contact-form textarea{
+    font-size: 18px;
+    padding: 25px 25px;
+  }
+
+  .dl-resume{
+    padding: 0;
+  }
+
+  .contact-form button, .dl-resume a{
+    padding: 18px;
+    font-size: 18px;
+  }
+
+  .modal{
+    padding: 40px 50px;
+  }
+
+  .modal p{
+    font-size: 18px;
+  }
+
+  .modal button{
+    font-size: 16px;
+  }
+
+  .modal-content img{
+    width: 70px;
+    height: 70px;
   }
 }

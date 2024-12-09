@@ -21,7 +21,7 @@
 
 .skill-content h1{
   color: var(--c4);
-  font: 600 40px 'Maven Pro', sans-serif;
+  font: 600 50px 'Maven Pro', sans-serif;
 }
 
 .skill-content h1:hover{
@@ -191,138 +191,221 @@
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 390px){
+  .skills{
+    min-height: auto;
+    height: auto;
+    padding: 8rem 5% 4rem 5%;
+  }
+
+  .skill-content{
+    width: 100%;
+  }
+
+  .skill-content h1{
+    font-size: 35px;
+  }
+
+  .skill-content p{
+    padding: 10px 0 0 0;
+    font-size: 14px;
+  }
+
+  .skill-list{
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .languages-list ul,
+  .frameworks-list ul,
+  .others-list ul {
+    gap: 6px;
+  }
+
+  .languages-list li,
+  .frameworks-list li,
+  .others-list li {
+    height: 80px;
+  }
+
+  .languages-list span,
+  .frameworks-list span,
+  .others-list span {
+    font-size: 6px;
+  }
+
+  .languages-list img,
+  .frameworks-list img,
+  .others-list img {
+      width: 20px;
+      height: 20px;
+  }
+
+  .languages-list li:nth-child(6) img,
+  .languages-list li:nth-child(7) img,
+  .frameworks-list li:nth-child(3) img,
+  .others-list li:nth-child(6) img{
+    width: 40px;
+    height: 20px;
+  }
+
   
 }
 
+@media (min-width: 391px) and (max-width: 617px){
+  .skills{
+    min-height: auto;
+    height: auto;
+    padding: 8rem 5% 4rem 5%;
+  }
 
-
-
-
-/* @media (min-width: 1440px) {
+  .skill-content{
+    width: 100%;
+  }
 
   .skill-content h1{
-    font-size: 50px;
+    font-size: 40px;
+  }
+
+  .skill-content p{
+    padding: 10px 0 0 0;
+  }
+
+  .skill-list{
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .languages-list ul,
+  .frameworks-list ul,
+  .others-list ul {
+    gap: 8px;
+  }
+
+  .languages-list span,
+  .frameworks-list span,
+  .others-list span {
+    font-size: 8px;
+  }
+
+  .languages-list img,
+  .frameworks-list img,
+  .others-list img {
+      width: 25px;
+      height: 25px;
+  }
+
+  .languages-list li:nth-child(6) img,
+  .languages-list li:nth-child(7) img,
+  .frameworks-list li:nth-child(3) img,
+  .others-list li:nth-child(6) img{
+    width: 45px;
+    height: 25px;
+  }
+
+}
+
+@media (min-width: 618px) and (max-width: 768px){
+  .skills{
+    min-height: auto;
+    height: auto;
+    padding: 8rem 5% 4rem 5%;
+  }
+
+  .skill-content{
+    width: 100%;
+  }
+
+  .skill-content h1{
+    font-size: 40px;
+  }
+
+  .skill-content p{
+    padding: 10px 0 0 0;
+  }
+
+  .skill-list{
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .languages-list ul,
+  .frameworks-list ul,
+  .others-list ul {
+    gap: 12px;
+  }
+
+  .languages-list span,
+  .frameworks-list span,
+  .others-list span {
+    font-size: 10px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 1280px){
+  .skills{
+    min-height: auto;
+    height: auto;
+    padding: 8rem 5% 4rem 5%;
+  }
+
+  .skill-content{
+    width: 100%;
+  }
+
+  .skill-content h1{
+    font-size: 40px;
+  }
+
+  .skill-content p{
+    padding: 10px 0 0 0;
+  }
+
+  .skill-list{
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .languages-list ul,
+  .frameworks-list ul,
+  .others-list ul {
+    gap: 15px;
+  }
+
+  .languages-list span,
+  .frameworks-list span,
+  .others-list span {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 1537px) and (max-width: 1919px){
+
+  .skill-content h1{
+    font-size: 55px;
   }
 
   .skill-content p{
     font-size: 20px;
-    padding: 10px 15rem;
+    padding: 10px 20%;
   }
 
-  .skill-list{
-    height: 65%;
+  .languages-list img,
+  .frameworks-list img,
+  .others-list img {
+      width: 40px;
+      height: 40px;
   }
 
-  .skill-list-items{
-    height: 100%;
-    width: auto;
-  }
-
-  .languages-list li,
-  .frameworks-list li,
-  .others-list li{
-    height: 120px;
-  }
-} */
-
-/* @media (max-width: 1280px){
-  .skill-content p{
-    padding: 10px 15rem;
-  }
-
-  .skill-list{
-    height: 70%;
-  }
-} */
-
-/* @media (max-width: 1024px) {
-  .skill-content p {
-    font-size: 0.9rem;
-    padding: 10px 15%;
-  }
-
-  .skill-list-items {
-    max-width: 300px;
-  }
-
-  .languages-list li,
-  .frameworks-list li,
-  .others-list li {
+  .languages-list li:nth-child(6) img,
+  .languages-list li:nth-child(7) img,
+  .frameworks-list li:nth-child(3) img,
+  .others-list li:nth-child(6) img{
     width: 60px;
-    height: 90px;
-  }
-
-  .languages-list img,
-  .frameworks-list img,
-  .others-list img {
-    width: 35px;
-    height: 35px;
-  }
-
-  .languages-list span,
-  .frameworks-list span,
-  .others-list span {
-    font-size: 0.75rem;
+    height: 40px;
   }
 }
-
-@media (max-width: 768px) {
-  .skill-content p {
-    padding: 10px;
-  }
-
-  .languages-list li,
-  .frameworks-list li,
-  .others-list li {
-    width: 50px;
-    height: 80px;
-  }
-
-  .languages-list img,
-  .frameworks-list img,
-  .others-list img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .languages-list span,
-  .frameworks-list span,
-  .others-list span {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .skill-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .skill-content p {
-    font-size: 0.8rem;
-    line-height: 1.4;
-  }
-
-  .languages-list li,
-  .frameworks-list li,
-  .others-list li {
-    width: 40px;
-    height: 70px;
-  }
-
-  .languages-list img,
-  .frameworks-list img,
-  .others-list img {
-    width: 25px;
-    height: 25px;
-  }
-
-  .languages-list span,
-  .frameworks-list span,
-  .others-list span {
-    font-size: 0.6rem;
-  }
-} */
 
 
 @media (min-width: 1920px){
@@ -339,7 +422,8 @@
     font-size: 24px;
   }
 
-  .skill-list{
+  .skill-list{  
+    margin-top: 50px;
     gap: 25px;
   }
 
