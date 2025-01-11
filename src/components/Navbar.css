@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Maven+Pro:wght@400..900&display=swap');
 
-.navbar{
+.navbar {
     width: 100%;
-    background-color: transparent;
+    height: auto;
+    background: transparent;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,30 +11,41 @@
     padding: 20px 5% 12px 5%;
     z-index: 1000;
     position: fixed;
-    overflow: hidden;
     transition: all 0.5s ease-out;
 }
 
-.navbar.scrolled {
-    background-color: var(--blurBlack);
-    backdrop-filter: blur(50px); 
+/* blur effect */
+.navbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+.navbar.scrolled {
+    background: var(--blurBlack);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.navbar img{
+
+.navbar img {
     width: 170px;
     object-fit: contain;
     cursor: pointer;
 }
 
-.nav-links ul{ 
+.nav-links ul {
     display: flex;
     flex-direction: row;
-    align-items: center;  
+    align-items: center;
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     margin: 0 20px;
 }
@@ -45,7 +57,7 @@
     font-family: 'Maven Pro', sans-serif;
     font-weight: 600;
     position: relative;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .nav-links ul li a::before {
@@ -54,20 +66,21 @@
     left: 50%;
     bottom: -5px;
     width: 0%;
-    height: 2px; 
-    background-color: var(--c3); 
-    transition: all 0.3s ease; 
-    transform: translateX(-50%); 
+    height: 2px;
+    background-color: var(--c3);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
 }
 
 .nav-links ul li a:hover::before,
 .nav-links ul li a.active::before {
-    width: 100%; 
-    left: 50%; 
+    width: 100%;
+    left: 50%;
     color: var(--c3);
 }
 
-.nav-links ul li a:hover, .nav-links ul li a.active{
+.nav-links ul li a:hover,
+.nav-links ul li a.active {
     color: var(--c3);
 }
 
@@ -87,7 +100,7 @@
     border-radius: 5px;
     font: 600 15px 'Maven pro', sans-serif;
     margin-left: 25px;
-} 
+}
 
 .resumeBTN::before {
     position: absolute;
@@ -100,27 +113,27 @@
     height: 100%;
     opacity: 1;
     border: 2px solid var(--c3);
-} 
+}
 
 .resumeBTN:hover::before {
     width: 0px;
     height: 100%;
     opacity: 1;
-} 
+}
 
 
 .resumeBTN {
     background: var(--c3);
     color: var(--c1);
     transition: 0.3s;
-} 
+}
 
 
 .resumeBTN:hover {
     background: transparent;
     color: var(--c3);
     transition: 0.3s;
-} 
+}
 
 
 .resumeBTN::after {
@@ -134,51 +147,90 @@
     height: 100%;
     opacity: 1;
     border: 2px solid var(--c3);
-} 
+}
 
 .resumeBTN:hover::after {
     width: 0px;
-} 
+}
 
-.navbar-toggle{
+.navbar-toggle {
     display: none;
 }
 
+@media (min-width: 1919px){
+    .navbar img {
+        width: 220px;
+    }
 
-
-@media (min-width: 769px) and (max-width: 1024px) { 
-    .nav-links ul li{
-        margin: 0 10px;
+    .nav-links ul li a{
+        font-size: 20px;
     }
 
     .dbtn{
+        font-size: 18px;
+        width: 140px;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1919px){
+    .navbar img {
+        width: 190px;
+    }
+
+    .nav-links ul li a{
+        font-size: 18px;
+    }
+
+    .dbtn{
+        font-size: 17px;
+        width: 130px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-links ul li {
+        margin: 0 10px;
+    }
+
+    .dbtn {
         padding: 5px 10px;
         margin-left: 10px;
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 769px) {
     .navbar-toggle {
         display: block;
         cursor: pointer;
         color: var(--c4);
+        transition: all 0.3s ease;
+    }
+
+    .navbar-toggle:active{
+        transform: scale(0.8);
+    }
+
+    .navbar.scrolled .nav-links {
+        background: inherit;
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
     }
 
     .nav-links {
         position: absolute;
-        display: none;  
+        display: none;
         width: 100%;
         height: auto;
-        background: linear-gradient(90deg, var(--bg1), var(--bg2)); 
+        background: linear-gradient(90deg, var(--bg1), var(--bg2));
         top: 60px;
         left: 0;
         padding: 10px 0;
         z-index: 999;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24) ;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
     }
 
-    .nav-links.show{
-        display: block; 
+    .nav-links.show {
+        display: block;
     }
 
     .nav-links ul {
@@ -190,14 +242,14 @@
         padding: 5px 15px;
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         width: 100%;
         text-align: center;
         border-radius: 5px;
         margin-bottom: 5px;
     }
 
-    .nav-links ul li a{
+    .nav-links ul li a {
         display: block;
         width: 100%;
         height: 100%;
@@ -209,14 +261,20 @@
         content: none;
     }
 
-    .nav-links ul li:hover, .nav-links ul li a.active{
+    .nav-links ul li:hover,
+    .nav-links ul li a.active {
         background-color: var(--blurBlack);
     }
 
-    .dbtn{
+    .navbar.scrolled .nav-links ul li:hover, 
+    .navbar.scrolled .nav-links ul li a.active {
+        background-color: var(--c2);
+    }
+
+    .dbtn {
         margin: 0;
         width: 100%;
     }
 
+    
 }
-

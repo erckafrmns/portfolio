@@ -15,7 +15,7 @@ function App() {
 
     const handleScroll = () => {
         const distanceFromBottom = document.documentElement.scrollHeight - window.scrollY - window.innerHeight;
-        
+
         if (distanceFromBottom <= 400) {
             setShowBackToTop(true);
         } else {
@@ -26,37 +26,37 @@ function App() {
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth', 
+            behavior: 'smooth',
         });
     };
 
     useEffect(() => {
 
         window.addEventListener('scroll', handleScroll);
-       
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    
+
     return (
         <>
-            <Navbar/>
-            <Hero/>
-            <Projects/>
-            <Skills/>
-            <Contact/>
-            <Footer/>  
+            <Navbar />
+            <Hero />
+            <Projects />
+            <Skills />
+            <Contact />
+            <Footer />
 
             {showBackToTop && (
                 <div className={`back-to-top-wrapper ${showBackToTop ? 'show' : ''}`} >
-                    
+
                     <button className="back-to-top-btn" onClick={scrollToTop}>
                         <IoIosArrowDropupCircle />
                     </button>
                     <span className="back-to-top-text">Back to Top</span>
                 </div>
-            )} 
+            )}
         </>
     );
 }

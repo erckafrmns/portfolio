@@ -19,12 +19,7 @@
     height: 50px;
     margin-bottom: 10px;
     border: 2px solid var(--c5);
-    cursor: zoom-in;
     transition: all 0.3s ease-in-out;
-}
-
-.profileIMG:active{
-    transform: scale(2);
 }
 
 .footer h1{

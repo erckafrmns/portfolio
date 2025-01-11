@@ -20,15 +20,15 @@ import facebook from './assets/socials/facebook.png';
 import gmail from './assets/socials/gmail.png';
 import linkedin from './assets/socials/linkedin.png';
 import github from './assets/socials/github.png';
-import project1 from './assets/projects/1.png';
+import project1 from './assets/projects/atkk.gif';
 import project2 from './assets/projects/campuscompass.gif';
 import project3 from './assets/projects/markdowntohtml.gif';
-import project4 from './assets/projects/4.png';
+import project4 from './assets/projects/properties-settlement.gif';
 import featured1 from './assets/projects/featured/1.png';
 import featured2 from './assets/projects/featured/2.png';
 import featured3 from './assets/projects/featured/3.png';
 import featured4 from './assets/projects/featured/4.png';
-import profile from './assets/Formanes.jpg';
+import profile from './assets/Formanes.png';
 import resume from './assets/Resume.pdf';
 import { FaReact, FaPython, FaDocker, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa6";
 import { BiLogoFlask, BiLogoPostgresql, BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
@@ -122,7 +122,7 @@ const data = {
       {
         name: "Markdown to HTML Converter",
         img: project3,
-        description: "The system simplifies converting Markdown to HTML, making it easier for users to prepare web-friendly content. It allows users to input Markdown text directly or upload files for seamless conversion. The goal is to provide a user-friendly tool that enhances accessibility and usability for content creators and developers.",
+        description: "This system simplifies converting Markdown to HTML, making it easier for users to prepare web-friendly content. It allows users to input Markdown text directly or upload files for seamless conversion. The goal is to provide a user-friendly tool that enhances accessibility and usability for content creators and developers.",
         link: "https://github.com/erckafrmns/markdown-to-html",
         languages: [
           { icon: <FaHtml5 />, color: "#E34F26", name: "HTML5" },

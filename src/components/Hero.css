@@ -292,10 +292,6 @@ h3 span {
 
 @media (max-width: 454px){
 
-  /* .hero{
-    height: auto;
-  } */
-
   .hero-right{
     display: none;
   }
@@ -360,6 +356,10 @@ h3 span {
 
 
 @media (min-width: 454px) and (max-width: 602px){
+  .hero{
+    height: auto;
+  }
+  
   .hero-right{
     display: none;
   }
