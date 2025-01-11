@@ -54,6 +54,18 @@ const Hero = () => {
     }, [charIndex, roleIndex, roles]);
 
 
+    function adjustHeroHeight() {
+        const hero = document.querySelector('.hero');
+        hero.style.height = `${window.innerHeight}px`;
+    }
+
+    // Adjust height on page load
+    window.addEventListener('load', adjustHeroHeight);
+
+    // Adjust height when resizing the window 
+    window.addEventListener('resize', adjustHeroHeight);
+
+
     return (
         <>
             <section className='hero' id='hero'>
