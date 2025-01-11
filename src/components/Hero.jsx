@@ -53,19 +53,6 @@ const Hero = () => {
         }
     }, [charIndex, roleIndex, roles]);
 
-
-    function adjustHeroHeight() {
-        const hero = document.querySelector('.hero');
-        hero.style.height = `${window.innerHeight}px`;
-    }
-
-    // Adjust height on page load
-    window.addEventListener('load', adjustHeroHeight);
-
-    // Adjust height when resizing the window 
-    window.addEventListener('resize', adjustHeroHeight);
-
-
     return (
         <>
             <section className='hero' id='hero'>
@@ -90,17 +77,18 @@ const Hero = () => {
 
                             <div className="slide-track">
                                 {featuredProjects.map((project, index) => (
-                                    <div className="slide" key={index}>
-                                        <img src={project} alt={`Project ${index + 1}`} />
+                                    <div className="slide" key={index} onClick={() => window.open(project.link, '_blank')}>
+                                        <img src={project.image} alt={`Project ${index + 1}`} />
                                     </div>
                                 ))}
 
                                 {featuredProjects.map((project, index) => (
-                                    <div className="slide" key={index}>
-                                        <img src={project} alt={`Project ${index + 1}`} />
+                                    <div className="slide" key={index} onClick={() => window.open(project.link, '_blank')}>
+                                        <img src={project.image} alt={`Project ${index + 1}`} />
                                     </div>
                                 ))}
                             </div>
+
                         </div>
 
                     </div>

@@ -1,10 +1,8 @@
 /* HERO SECTION STYLES */
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   height: 100dvh;
-  padding-top: env(safe-area-inset-top);  /* Accounts for top UI space */
-  padding-bottom: env(safe-area-inset-bottom);  /* Accounts for bottom UI space */
   display: flex;
   flex-direction: column;
   padding-top: 4.2%;
@@ -355,6 +353,7 @@ h3 span {
 }
 
 @media (min-width: 338px) and (max-width: 376px) {
+
   .hero-right {
     display: none;
   }
