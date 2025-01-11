@@ -249,7 +249,9 @@
     height: 20px;
   }
 
-  
+  .skills .custom-shape-divider-skills-top svg {
+    height: 110px;
+  }
 }
 
 @media (min-width: 391px) and (max-width: 618px){
@@ -303,6 +305,10 @@
     height: 25px;
   }
 
+  .skills .custom-shape-divider-skills-top svg {
+    height: 120px;
+  }
+
 }
 
 @media (min-width: 618px) and (max-width: 769px){
@@ -341,6 +347,9 @@
     font-size: 10px;
   }
 
+  .skills .custom-shape-divider-skills-top svg {
+    height: 130px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1280px){

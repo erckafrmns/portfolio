@@ -1,5 +1,5 @@
 /* HERO SECTION STYLES */
-.hero{
+.hero {
   width: 100%;
   min-height: 100vh;
   height: 100vh;
@@ -9,8 +9,8 @@
   overflow-x: hidden;
 }
 
-.hero-content{
-  padding: 5% 0 5% 0;  
+.hero-content {
+  padding: 5% 0 5% 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,13 +19,13 @@
   overflow: hidden;
 }
 
-.hero-left{
+.hero-left {
   width: 60%;
   height: 100%;
-  padding:0 10%;
+  padding: 0 10%;
 }
 
-.hero-left-content{
+.hero-left-content {
   width: 100%;
   height: 100%;
   display: flex;
@@ -35,20 +35,21 @@
   gap: 2%;
 }
 
-.hero-left-content h1, .hero-left-content h3{
+.hero-left-content h1,
+.hero-left-content h3 {
   font-family: 'Maven Pro', sans-serif;
   color: var(--c4);
   font-size: 55px;
   font-weight: 900;
 }
 
-.hero-left-content h3{
+.hero-left-content h3 {
   font-size: 40px;
   padding-bottom: 3%;
   position: relative;
 }
 
-.hero-left-content h1 span{
+.hero-left-content h1 span {
   color: var(--c3);
 }
 
@@ -85,7 +86,7 @@ h3 span {
   }
 }
 
-.hero-left-content p{
+.hero-left-content p {
   width: 86%;
   font: 450 18px 'Maven Pro', sans-serif;
   color: var(--c4);
@@ -93,7 +94,7 @@ h3 span {
   line-height: 1.6;
 }
 
-.hero-buttons{
+.hero-buttons {
   height: 12%;
   width: 100%;
   gap: 6%;
@@ -101,7 +102,7 @@ h3 span {
   flex-direction: row;
 }
 
-.hero-buttons button{
+.hero-buttons button {
   height: 100%;
   width: 28%;
   cursor: pointer;
@@ -115,22 +116,23 @@ h3 span {
   box-shadow: rgba(50, 88, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
-.GitHubBTN{
+.GitHubBTN {
   background-color: transparent;
   border: 3px solid var(--c3);
   color: var(--c3);
 }
 
-.LinkedInBTN{
+.LinkedInBTN {
   background-color: var(--blurBlack);
   border: 3px solid var(--blurBlack);
   color: var(--c3);
 }
 
-.GitHubBTN:after, .LinkedInBTN:after {
+.GitHubBTN:after,
+.LinkedInBTN:after {
   content: '→';
   position: absolute;
-  opacity: 0;  
+  opacity: 0;
   right: 0;
   transition: 0.5s;
   top: 50%;
@@ -148,20 +150,20 @@ h3 span {
   right: 8%;
 }
 
-.GitHubBTN:hover{
+.GitHubBTN:hover {
   padding-right: 28px;
-  padding-left:1px;
+  padding-left: 1px;
   transform: scale(0.98);
 }
 
-.LinkedInBTN:hover{
+.LinkedInBTN:hover {
   transform: scale(0.98);
   padding-right: 24px;
-  padding-left:1px;
+  padding-left: 1px;
   color: var(--c3);
 }
 
-.hs-icons{
+.hs-icons {
   font-size: 16px;
 }
 
@@ -185,7 +187,7 @@ h3 span {
   fill: rgba(1, 23, 21, 0.9);
 }
 
-.hero-right{
+.hero-right {
   width: 40%;
   height: 100%;
   display: flex;
@@ -196,7 +198,7 @@ h3 span {
   overflow-y: hidden;
 }
 
-.slider{
+.slider {
   width: 95%;
   align-self: flex-end;
   border-radius: 5rem 0 0 5rem/ 100% 0 0 100%;
@@ -204,40 +206,41 @@ h3 span {
   display: grid;
   place-items: center;
   overflow-y: hidden;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
-.hero-right h2{
-  position: absolute; 
-  top: 15%; 
+.hero-right h2 {
+  position: absolute;
+  top: 15%;
   left: 27%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
   color: var(--c1);
   font-size: 20px;
   text-align: center;
-  z-index: 3; 
+  z-index: 3;
 }
 
-.slide-track{
+.slide-track {
   display: flex;
   width: calc(400px * 8);
   animation: scroll 15s linear infinite;
 }
 
-.slide-track:hover{
+.slide-track:hover {
   animation-play-state: paused;
 }
 
-@keyframes scroll{
-  0%{
+@keyframes scroll {
+  0% {
     transform: translateX(0);
   }
-  100%{
+
+  100% {
     transform: translateX(calc(-400px * 4));
   }
 }
 
-.slide{
+.slide {
   height: 260px;
   width: 400px;
   display: flex;
@@ -247,21 +250,22 @@ h3 span {
   perspective: 100px;
 }
 
-.slide img{
+.slide img {
   width: 100%;
   cursor: pointer;
   transition: transform 1s;
   z-index: 2;
-  box-shadow: rgba(9, 144, 105, 0.15) 1.95px 1.95px 2.6px;}
+  box-shadow: rgba(9, 144, 105, 0.15) 1.95px 1.95px 2.6px;
+}
 
-.slide img:hover{
+.slide img:hover {
   transform: translateZ(10px);
   z-index: 3;
 }
 
 .slider::before,
-.slider::after{
-  background: linear-gradient(to right, rgba(41, 41, 41, 0.5) 0%, rgba(255,255,255,0) 80%);
+.slider::after {
+  background: linear-gradient(to right, rgba(41, 41, 41, 0.5) 0%, rgba(255, 255, 255, 0) 80%);
   content: '';
   height: 100%;
   position: absolute;
@@ -269,68 +273,58 @@ h3 span {
   z-index: 2;
 }
 
-.slider::before{
+.slider::before {
   left: 0;
   top: 0;
 }
 
-.slider::after{
+.slider::after {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
 }
 
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .custom-shape-divider-hero-bottom svg {
-      width: calc(105% + 1.3px);
-      height: 153px;
-  }
-}
-
-
-@media (max-width: 454px){
-
-  .hero-right{
+@media (max-width: 338px) {
+  .hero-right {
     display: none;
   }
 
-  .hero-content{
+  .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .hero-left{
-    width: 80%;
+  .hero-left {
+    width: 90%;
     padding: 0;
   }
 
-  .hero-left-content{
+  .hero-left-content {
     padding: 0;
   }
 
-  .hero-left-content h1, .hero-left-content h3{
+  .hero-left-content h1,
+  .hero-left-content h3 {
     font-family: 'Maven Pro', sans-serif;
     color: var(--c4);
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 900;
   }
 
-  .hero-left-content h3{
-    font-size: 22px;
+  .hero-left-content h3 {
+    font-size: 20px;
   }
 
-  .hero-left-content p{
+  .hero-left-content p {
     font-size: 14px;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
-  .hero-buttons{
+  .hero-buttons {
     height: 45px;
     display: flex;
     flex-direction: row;
@@ -338,67 +332,67 @@ h3 span {
     align-items: center;
   }
 
-  .hero-buttons button{
+  .hero-buttons button {
     width: 40%;
     font-size: 14px;
     font-weight: 500;
   }
 
-  .hs-icons{
+  .hs-icons {
     font-size: 12px;
   }
 
-  .GitHubBTN:after, .LinkedInBTN:after{
+  .GitHubBTN:after,
+  .LinkedInBTN:after {
     font-size: 18px;
   }
 
+  .custom-shape-divider-hero-bottom svg {
+    height: 153px;
+  }
 }
 
-
-@media (min-width: 454px) and (max-width: 602px){
-  .hero{
-    height: auto;
-  }
-  
-  .hero-right{
+@media (min-width: 338px) and (max-width: 376px) {
+  .hero-right {
     display: none;
   }
 
-  .hero-content{
+  .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .hero-left{
+  .hero-left {
     width: 80%;
     padding: 0;
   }
 
-  .hero-left-content{
+  .hero-left-content {
     padding: 0;
   }
 
-  .hero-left-content h1, .hero-left-content h3{
+  .hero-left-content h1,
+  .hero-left-content h3 {
     font-family: 'Maven Pro', sans-serif;
     color: var(--c4);
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 900;
   }
 
-  .hero-left-content h3{
-    font-size: 26px;
+  .hero-left-content h3 {
+    font-size: 20px;
   }
 
-  .hero-left-content p{
-    font-size: 16px;
+  .hero-left-content p {
+    font-size: 14px;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
-  .hero-buttons{
+  .hero-buttons {
     height: 45px;
     display: flex;
     flex-direction: row;
@@ -406,55 +400,200 @@ h3 span {
     align-items: center;
   }
 
-  .hero-buttons button{
+  .hero-buttons button {
     width: 40%;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
   }
 
-  .hs-icons{
-    font-size: 14px;
+  .hs-icons {
+    font-size: 12px;
+  }
+
+  .GitHubBTN:after,
+  .LinkedInBTN:after {
+    font-size: 18px;
+  }
+
+  .custom-shape-divider-hero-bottom svg {
+    height: 153px;
   }
 }
 
-@media (min-width: 602px) and (max-width: 769px){
-  .hero-right{
+@media (min-width: 376px) and (max-width: 454px) {
+
+  .hero-right {
     display: none;
   }
 
-  .hero-content{
+  .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .hero-left{
+  .hero-left {
     width: 80%;
     padding: 0;
   }
 
-  .hero-left-content{
+  .hero-left-content {
     padding: 0;
   }
 
-  .hero-left-content h1, .hero-left-content h3{
+  .hero-left-content h1,
+  .hero-left-content h3 {
+    font-family: 'Maven Pro', sans-serif;
+    color: var(--c4);
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  .hero-left-content h3 {
+    font-size: 22px;
+  }
+
+  .hero-left-content p {
+    font-size: 14px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .hero-buttons {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 40%;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .hs-icons {
+    font-size: 12px;
+  }
+
+  .GitHubBTN:after,
+  .LinkedInBTN:after {
+    font-size: 18px;
+  }
+
+  .custom-shape-divider-hero-bottom svg {
+    height: 153px;
+  }
+
+}
+
+
+@media (min-width: 454px) and (max-width: 602px) {
+
+  .hero-right {
+    display: none;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-left {
+    width: 80%;
+    padding: 0;
+  }
+
+  .hero-left-content {
+    padding: 0;
+  }
+
+  .hero-left-content h1,
+  .hero-left-content h3 {
+    font-family: 'Maven Pro', sans-serif;
+    color: var(--c4);
+    font-size: 32px;
+    font-weight: 900;
+  }
+
+  .hero-left-content h3 {
+    font-size: 26px;
+  }
+
+  .hero-left-content p {
+    font-size: 16px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .hero-buttons {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .hero-buttons button {
+    width: 40%;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .hs-icons {
+    font-size: 14px;
+  }
+  
+  .custom-shape-divider-hero-bottom svg {
+    height: 153px;
+  }
+}
+
+@media (min-width: 602px) and (max-width: 769px) {
+  .hero-right {
+    display: none;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-left {
+    width: 80%;
+    padding: 0;
+  }
+
+  .hero-left-content {
+    padding: 0;
+  }
+
+  .hero-left-content h1,
+  .hero-left-content h3 {
     color: var(--c4);
     font-size: 40px;
   }
 
-  .hero-left-content h3{
+  .hero-left-content h3 {
     font-size: 32px;
   }
 
-  .hero-left-content p{
+  .hero-left-content p {
     font-size: 18px;
     width: 96%;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
-  .hero-buttons{
+  .hero-buttons {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -462,65 +601,70 @@ h3 span {
     align-items: center;
   }
 
-  .hero-buttons button{
+  .hero-buttons button {
     width: 40%;
     font-size: 18px;
     font-weight: 500;
   }
 
-  .hs-icons{
+  .hs-icons {
     font-size: 14px;
   }
 
   .GitHubBTN:hover:after {
     right: 18%;
   }
-  
+
   .LinkedInBTN:hover:after {
     right: 14%;
   }
 
-  .GitHubBTN:hover{
+  .GitHubBTN:hover {
     padding-right: 35px;
   }
-  
-  .LinkedInBTN:hover{
+
+  .LinkedInBTN:hover {
     padding-right: 30px;
+  }
+
+  .custom-shape-divider-hero-bottom svg {
+    height: 143px;
   }
 }
 
-@media (min-width: 769px) and (max-width: 856px){
-  .hero-left{
+@media (min-width: 769px) and (max-width: 856px) {
+  .hero-left {
     width: 50%;
     padding: 0;
     padding-left: 5%;
   }
 
-  .hero-right{
+  .hero-right {
     width: 50%;
   }
 
-  .hero-left-content{
+  .hero-left-content {
     padding: 0;
   }
 
-  .hero-left-content h1, .hero-left-content h3{
+  .hero-left-content h1,
+  .hero-left-content h3 {
     color: var(--c4);
     font-size: 32px;
   }
 
-  .hero-left-content h3{
+  .hero-left-content h3 {
     font-size: 25px;
   }
 
-  .hero-left-content p{
+  .hero-left-content p {
     font-size: 16px;
     width: 96%;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
-  .hero-buttons{
+  .hero-buttons {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -528,65 +672,70 @@ h3 span {
     align-items: center;
   }
 
-  .hero-buttons button{
+  .hero-buttons button {
     width: 40%;
     font-size: 16px;
     font-weight: 500;
   }
 
-  .hs-icons{
+  .hs-icons {
     font-size: 14px;
   }
 
   .GitHubBTN:hover:after {
     right: 14%;
   }
-  
+
   .LinkedInBTN:hover:after {
     right: 10%;
   }
 
-  .GitHubBTN:hover{
+  .GitHubBTN:hover {
     padding-right: 35px;
   }
-  
-  .LinkedInBTN:hover{
+
+  .LinkedInBTN:hover {
     padding-right: 30px;
+  }
+
+  .custom-shape-divider-hero-bottom svg {
+    height: 143px;
   }
 }
 
-@media (min-width: 856px) and (max-width: 1025px){
-  .hero-left{
+@media (min-width: 856px) and (max-width: 1025px) {
+  .hero-left {
     width: 50%;
     padding: 0;
     padding-left: 5%;
   }
 
-  .hero-right{
+  .hero-right {
     width: 50%;
   }
 
-  .hero-left-content{
+  .hero-left-content {
     padding: 0;
   }
 
-  .hero-left-content h1, .hero-left-content h3{
+  .hero-left-content h1,
+  .hero-left-content h3 {
     color: var(--c4);
     font-size: 36px;
   }
 
-  .hero-left-content h3{
+  .hero-left-content h3 {
     font-size: 28px;
   }
 
-  .hero-left-content p{
+  .hero-left-content p {
     font-size: 16px;
     width: 96%;
     padding-top: 15px;
     padding-bottom: 15px;
   }
 
-  .hero-buttons{
+  .hero-buttons {
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -594,118 +743,183 @@ h3 span {
     align-items: center;
   }
 
-  .hero-buttons button{
+  .hero-buttons button {
     width: 40%;
     font-size: 16px;
     font-weight: 500;
   }
 
-  .hs-icons{
+  .hs-icons {
     font-size: 14px;
   }
 
   .GitHubBTN:hover:after {
     right: 18%;
   }
-  
+
   .LinkedInBTN:hover:after {
     right: 14%;
   }
 
-  .GitHubBTN:hover{
+  .GitHubBTN:hover {
     padding-right: 35px;
   }
-  
-  .LinkedInBTN:hover{
+
+  .LinkedInBTN:hover {
     padding-right: 30px;
+  }
+
+  .custom-shape-divider-hero-bottom svg {
+    height: 143px;
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1281px){
-  .hero-left{
+@media (min-width: 1025px) and (max-width: 1281px) {
+  .hero-left {
     padding: 0;
     padding-left: 8%;
   }
-  
-  .hero-left-content h1, .hero-left-content h3{
+
+  .hero-left-content h1,
+  .hero-left-content h3 {
     color: var(--c4);
     font-size: 40px;
   }
 
-  .hero-left-content h3{
+  .hero-left-content h3 {
     font-size: 35px;
   }
 
-  .hero-left-content p{
+  .hero-left-content p {
     font-size: 16px;
   }
 
-  .hero-buttons button{
+  .hero-buttons button {
     width: 35%;
     font-size: 16px;
     font-weight: 500;
   }
 
-  .hs-icons{
+  .hs-icons {
     font-size: 14px;
   }
 
   .GitHubBTN:hover:after {
     right: 20%;
   }
-  
+
   .LinkedInBTN:hover:after {
     right: 16%;
   }
 
-  .GitHubBTN:hover{
+  .GitHubBTN:hover {
     padding-right: 35px;
   }
-  
-  .LinkedInBTN:hover{
+
+  .LinkedInBTN:hover {
     padding-right: 30px;
+  }
+
+  .custom-shape-divider-hero-bottom svg {
+    height: 143px;
   }
 }
 
 
-@media (min-width: 1281px) and (max-width: 1535px){
+@media (min-width: 1281px) and (max-width: 1535px) {
 
-  .hero-left-content h1, .hero-left-content h3{
+  .hero-left-content h1,
+  .hero-left-content h3 {
     color: var(--c4);
     font-size: 40px;
   }
 
-  .hero-left-content h3{
+  .hero-left-content h3 {
     font-size: 35px;
   }
 
-  .hero-left-content p{
+  .hero-left-content p {
     font-size: 16px;
   }
 
-  .hero-buttons button{
+  .hero-buttons button {
     width: 35%;
     font-size: 16px;
     font-weight: 500;
   }
 
-  .hs-icons{
+  .hs-icons {
     font-size: 14px;
   }
 
   .GitHubBTN:hover:after {
     right: 20%;
   }
-  
+
   .LinkedInBTN:hover:after {
     right: 16%;
   }
 
-  .GitHubBTN:hover{
+  .GitHubBTN:hover {
     padding-right: 35px;
   }
-  
-  .LinkedInBTN:hover{
+
+  .LinkedInBTN:hover {
     padding-right: 30px;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 1919px) {
+
+  .hero-left-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-left-content h3 {
+    font-size: 45px;
+  }
+
+  .hero-left-content p,
+  .hero-buttons button {
+    font-size: 22px;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .slide img {
+    height: 85%;
+  }
+
+  .custom-shape-divider-hero-bottom svg {
+    height: 143px;
+  }
+}
+
+@media (min-width: 1919px) {
+  .hero-left-content h1 {
+    font-size: 64px;
+  }
+
+  .hero-left-content h3 {
+    font-size: 48px;
+  }
+
+  .hero-left-content p,
+  .hero-buttons button {
+    font-size: 24px;
+  }
+
+  .slide {
+    height: 320px;
+  }
+
+  .slide img {
+    height: 85%;
+  }
+
+  .custom-shape-divider-hero-bottom svg {
+    height: 163px;
   }
 }

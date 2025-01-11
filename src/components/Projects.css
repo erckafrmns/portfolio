@@ -206,7 +206,7 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--blurBlack);
-  border: 1px solid rgb(99, 99, 99);
+  border: 1px solid var(--c5);
   color: var(--c4);
   padding: 5px 10px;
   border-radius: 5px;
@@ -316,6 +316,10 @@
 
 @media (min-width: 1537px) and (max-width: 1919px) {
 
+  .project-content ul li{
+    height: 400px;
+  }
+
   .odd .pc-info h2,
   .even .pc-info h2{
     font-size: 26px;
@@ -386,7 +390,6 @@
   }
 
   .pc-image{
-    box-shadow: none;
     width: 50%;
   }
 
@@ -427,6 +430,8 @@
   .pc-image{
     width: 100%;
     border-radius: 10px;
+    box-shadow: none;
+    border: 2px solid var(--c5);
   }
 
   .even .pc-info, .odd .pc-info {
@@ -564,5 +569,9 @@
   .odd .gitIcon,
   .even .gitIcon{
     font-size: 9px;
+  }
+
+  .pc-image{
+    box-shadow: none;
   }
 }
