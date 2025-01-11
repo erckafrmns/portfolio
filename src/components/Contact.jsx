@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import emailjs from '@emailjs/browser';
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail, MdDeleteSweep } from "react-icons/md";
 import { FaLocationDot, FaDownload } from "react-icons/fa6";
