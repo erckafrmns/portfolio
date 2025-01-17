@@ -9,7 +9,7 @@ import react from './assets/skills/React.png';
 import flask from './assets/skills/Flask.png';
 import django from './assets/skills/Django.png';
 import express from './assets/skills/ExpressJS.png';
-import laravel from './assets/skills/Laravel.png';
+import restapi from './assets/skills/RestAPI.png';
 import git from './assets/skills/Git.png';
 import docker from './assets/skills/Docker.png';
 import nodejs from './assets/skills/Nodejs.png';
@@ -79,7 +79,7 @@ const data = {
       { name: "Flask", img: flask },
       { name: "Django", img: django },
       { name: "Express.js", img: express },
-      { name: "Laravel", img: laravel },
+      { name: "Rest API", img: restapi },
     ],
     tools: [
       { name: "Git", img: git },
