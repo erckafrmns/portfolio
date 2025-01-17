@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f0cb82d8.css",
-    "main.js": "/portfolio/static/js/main.fef58ad3.js",
+    "main.js": "/portfolio/static/js/main.2095424c.js",
     "static/js/453.acca0757.chunk.js": "/portfolio/static/js/453.acca0757.chunk.js",
     "static/media/properties-settlement.gif": "/portfolio/static/media/properties-settlement.1ca03dd1a5e03eb99916.gif",
     "static/media/atkk.gif": "/portfolio/static/media/atkk.04c12789afe6f6034814.gif",
@@ -15,10 +15,10 @@
     "static/media/React.png": "/portfolio/static/media/React.81ed438b18e24116794d.png",
     "static/media/PostgreSQL.png": "/portfolio/static/media/PostgreSQL.2874ca4580dff39a8cc6.png",
     "static/media/navbar-logo.png": "/portfolio/static/media/navbar-logo.5c28066bb254244d174d.png",
-    "static/media/Resume.pdf": "/portfolio/static/media/Resume.bb19c54cfc1623c1995c.pdf",
-    "static/media/Laravel.png": "/portfolio/static/media/Laravel.be3f622df04a403a80e5.png",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.1f056719544b200eb56d.pdf",
     "static/media/SQL.png": "/portfolio/static/media/SQL.85fb38d6773862e917f4.png",
     "static/media/Formanes.jpg": "/portfolio/static/media/Formanes.332117b0d453cb2370bb.jpg",
+    "static/media/RestAPI.png": "/portfolio/static/media/RestAPI.82147b64bff4283e52bf.png",
     "static/media/Nodejs.png": "/portfolio/static/media/Nodejs.5afcb5b8557ef5e10d1b.png",
     "static/media/javascript.png": "/portfolio/static/media/javascript.146bb54c525356f63306.png",
     "static/media/css3.png": "/portfolio/static/media/css3.5058933522a4d31c8e7d.png",
@@ -37,11 +37,11 @@
     "static/media/ExpressJS.png": "/portfolio/static/media/ExpressJS.9b344d7469dbbdc76754.png",
     "index.html": "/portfolio/index.html",
     "main.f0cb82d8.css.map": "/portfolio/static/css/main.f0cb82d8.css.map",
-    "main.fef58ad3.js.map": "/portfolio/static/js/main.fef58ad3.js.map",
+    "main.2095424c.js.map": "/portfolio/static/js/main.2095424c.js.map",
     "453.acca0757.chunk.js.map": "/portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0cb82d8.css",
-    "static/js/main.fef58ad3.js"
+    "static/js/main.2095424c.js"
   ]
 }
