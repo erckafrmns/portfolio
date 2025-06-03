@@ -29,7 +29,7 @@ import featured2 from './assets/projects/featured/2.png';
 import featured3 from './assets/projects/featured/3.png';
 import featured4 from './assets/projects/featured/4.png';
 import profile from './assets/Formanes.jpg';
-import resume from './assets/Resume.pdf';
+import resume from './assets/Resume_Ericka Joy Formanes.pdf';
 import { FaReact, FaPython, FaDocker, FaNodeJs, FaHtml5, FaCss3Alt } from "react-icons/fa6";
 import { BiLogoFlask, BiLogoPostgresql, BiLogoTypescript, BiLogoJavascript } from "react-icons/bi";
 import { SiExpress } from "react-icons/si";
@@ -102,8 +102,8 @@ const data = {
     {
       name: "Ang Tipo Kong Kwento",
       img: project1,
-      description: "Ang Tipo Kong Kwento is an ongoing project that aims to develop an AI system that generates engaging and educational Tagalog stories for young children. The goal is to provide stories that will entertain kids, foster a love for reading, impart valuable lessons and promote Filipino culture. ",
-      link: "https://github.com/erckafrmns/ang-tipo-kong-kwento",
+      description: "Ang Tipo Kong Kwento is a web-based application that generates engaging and educational Tagalog stories for young children. Using a fine-tuned GPT-2 Tagalog language model, it produces child-friendly stories designed to entertain, foster a love for reading, teach valuable lessons, and promote Filipino culture.",
+      link: "https://ang-tipo-kong-kwento.onrender.com/", //"https://github.com/erckafrmns/ang-tipo-kong-kwento",
       languages: [
         { icon: <FaReact />, color: "#61DAFB", name: "React" },
         { icon: <FaPython />, color: "#306998", name: "Python" },
