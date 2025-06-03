@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f0cb82d8.css",
-    "main.js": "/portfolio/static/js/main.2095424c.js",
+    "main.js": "/portfolio/static/js/main.c73e0b6f.js",
     "static/js/453.acca0757.chunk.js": "/portfolio/static/js/453.acca0757.chunk.js",
     "static/media/properties-settlement.gif": "/portfolio/static/media/properties-settlement.1ca03dd1a5e03eb99916.gif",
     "static/media/atkk.gif": "/portfolio/static/media/atkk.04c12789afe6f6034814.gif",
@@ -15,7 +15,7 @@
     "static/media/React.png": "/portfolio/static/media/React.81ed438b18e24116794d.png",
     "static/media/PostgreSQL.png": "/portfolio/static/media/PostgreSQL.2874ca4580dff39a8cc6.png",
     "static/media/navbar-logo.png": "/portfolio/static/media/navbar-logo.5c28066bb254244d174d.png",
-    "static/media/Resume.pdf": "/portfolio/static/media/Resume.1f056719544b200eb56d.pdf",
+    "static/media/Resume_Ericka Joy Formanes.pdf": "/portfolio/static/media/Resume_Ericka Joy Formanes.fb7b741a985992d1812e.pdf",
     "static/media/SQL.png": "/portfolio/static/media/SQL.85fb38d6773862e917f4.png",
     "static/media/Formanes.jpg": "/portfolio/static/media/Formanes.332117b0d453cb2370bb.jpg",
     "static/media/RestAPI.png": "/portfolio/static/media/RestAPI.82147b64bff4283e52bf.png",
@@ -37,11 +37,11 @@
     "static/media/ExpressJS.png": "/portfolio/static/media/ExpressJS.9b344d7469dbbdc76754.png",
     "index.html": "/portfolio/index.html",
     "main.f0cb82d8.css.map": "/portfolio/static/css/main.f0cb82d8.css.map",
-    "main.2095424c.js.map": "/portfolio/static/js/main.2095424c.js.map",
+    "main.c73e0b6f.js.map": "/portfolio/static/js/main.c73e0b6f.js.map",
     "453.acca0757.chunk.js.map": "/portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f0cb82d8.css",
-    "static/js/main.2095424c.js"
+    "static/js/main.c73e0b6f.js"
   ]
 }
